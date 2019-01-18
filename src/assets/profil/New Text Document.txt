@@ -1,0 +1,2 @@
+https://api.whatsapp.com/send?phone=6285954615788&text=*Berkolaborasi%20Bersama%20Tanam%20Pahala*%0ANama%3A%20%0AAlamat%3A%20%0AJenis%20Donasi%3A%20%0A*Catatan%20_(Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan)_*%0A#BersamaMembantuSesama
+http://bit.ly/2EXukHD
