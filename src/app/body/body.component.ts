@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css']
 })
-export class BodyComponent implements OnInit {
 
+export class BodyComponent implements OnInit {
+  quotes : string
+  displayable = true
   constructor() { }
 
   ngOnInit() {
   }
+
+  onClick(value){
+    this.quotes = value
+  }
+
+  
 
 }

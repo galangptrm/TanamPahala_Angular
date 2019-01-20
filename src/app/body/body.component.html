@@ -1,6 +1,9 @@
 <!--OPENING-->
+<!-- <input [(ngModel)]="quotes" type="text">
+<input #inputan type="text">
+<button (click)="onClick(inputan.type)" >Log</button> -->
 <body>
-	<div id="opening">
+	<div *ngIf="displayable" id="opening">
 		<h3 class="center" style="margin-top:0px"><br>
 		<br>
 		<br>
@@ -10,7 +13,7 @@
 		Mari Berkolaborasi!<br>
 		<!-- Modal Trigger --></p>
 		<div class="card-action" style="padding:8px">
-			<a class="btn modal-trigger yellow accent-4" data-target="modal1" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:36px;" target="_blank">DONASI</a>
+			<a class="btn modal-trigger yellow accent-4 center" data-target="modal1" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:36px;" target="_blank">DONASI</a>
 		</div><!-- Modal Trigger -->
 		<p></p>
 		<p class="center">Bersama Tanam Pahala, Membantu Sesama</p><!-- Modal Structure -->
