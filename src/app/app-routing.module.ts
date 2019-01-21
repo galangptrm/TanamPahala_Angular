@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Route } from '@angular/compiler/src/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BodyComponent } from './body/body.component';
 import { NavigationComponent } from './navigation/navigation.component';
