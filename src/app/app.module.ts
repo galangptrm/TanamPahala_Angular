@@ -3,22 +3,17 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { BodyComponent } from './body/body.component';
-import { HeadComponent } from './head/head.component';
-import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    BodyComponent,
-    HeadComponent,
-    FooterComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
