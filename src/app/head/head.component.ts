@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 
 export class HeadComponent implements OnInit {
 
-  judul = 'Tanam Pahala';
   constructor() { 
     
   }
