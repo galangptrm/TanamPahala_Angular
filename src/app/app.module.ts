@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { AnggotaService } from './anggota.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     RouterModule
   ],
-  providers: [],
+  providers: [AnggotaService],
   bootstrap: [AppComponent]
 })
 
