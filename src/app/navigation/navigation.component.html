@@ -1,5 +1,5 @@
 <!--NAVBAR-->
-<div class="navbar-fixed" >
+<div *ngIf="nav.visibility" class="navbar-fixed" >
   <nav class="nav-extended">
     <div class="nav-wrapper white">
     <div class="container">
@@ -14,9 +14,9 @@
     </div>
     </div>
   </nav>
-  </div>
+</div>
   
-  <div style="color:rgb(16, 74, 48)">
+<div *ngIf="nav.visibility" style="color:rgb(16, 74, 48)">
   <ul style="margin:0px;padding-top:7px;padding-right:10px;padding-left:10px" class="sidenav" id="mobile-demo">	
     
     <!-- <hr color="rgb(16, 74, 48)"> -->
@@ -37,4 +37,4 @@
     <li><a style="color:rgb(16, 74, 48)" href="http://instagram.com/tanampahala" target="_blank"><i style="color:rgb(16, 74, 48)"  class="fab fa-instagram"></i>&nbsp Instagram</a></li>
     <li><a style="color:rgb(16, 74, 48)" href="#" target="_blank"><i style="color:rgb(16, 74, 48)"  class="fab fa-facebook"></i>&nbsp Facebook</a></li>
   </ul>
-  </div>
+</div>

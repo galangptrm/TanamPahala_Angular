@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BodyComponent implements OnInit {
   quotes : string
   displayable = true
+  
   constructor() { }
 
   ngOnInit() {

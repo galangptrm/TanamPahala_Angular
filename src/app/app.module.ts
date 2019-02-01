@@ -11,7 +11,6 @@ import { AnggotaService } from './anggota.service';
   declarations: [
     AppComponent,
     routingComponents
-    
   ],
   imports: [
     BrowserModule,

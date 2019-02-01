@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarService } from '../navbar.service';
+import { FooterService } from '../footer.service';
 
 @Component({
   selector: 'app-page-not-found',
@@ -8,11 +10,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class PageNotFoundComponent implements OnInit {
   
-  constructor() { 
+  constructor(
+    public nav : NavbarService,
+    public foot : FooterService
+    ) { 
     
   }
 
   ngOnInit() {
+    this.nav.hide()
+    this.foot.hide()
   }
 
 }
