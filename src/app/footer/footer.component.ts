@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterService } from '../footer.service';
+
+declare var $ : any
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public foot : FooterService) { }
 
   ngOnInit() {
+    $('.materialboxed').materialbox();
   }
 
 }

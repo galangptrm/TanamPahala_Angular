@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-declare var jquery:any
+import { Component, OnInit } from '@angular/core';
+
 declare var $ : any
 
 @Component({
@@ -8,24 +8,8 @@ declare var $ : any
   styles: [ './app.component.css']
 })
 
-export class AppComponent {
-		
-		// $(document).ready(function(){
-    //   $('.sidenav').sidenav();
-    //   $('.materialboxed').materialbox();
+export class AppComponent implements OnInit {
+		ngOnInit(){
 
-		// 	$('.carousel').carousel({
-		// 	padding:100,
-		// 	dist:0,
-		// 	indicators:true,
-    //   });
-      
-    //   $('.modal').modal({
-		// 		opacity:0.8,
-		// 		dismissible:false,
-		// 		preventScrolling:false,
-		// 		endingTop:'15%'
-		// 	});
-		// });
-        
+    }
 }

@@ -1,34 +1,88 @@
 <title>Anggota Tanam Pahala</title>
-<body>
+	<body>
 		<div class="row content-profil">
 			<div class="container">
-				<!-- <div>
+				<div>
 					<a class="" href="#"><i class="material-icons" style="color:#004d40; font-size: 36px; padding-top:10px">person_pin</i><b id="tu">Profil Anggota Malang</b></a>
-				</div> -->
+				</div>
 				<!-- Ng-For -->
-				<div *ngFor="let anggota of anggotas">
+				<div *ngFor="let anggotaMalang of anggotaMalangs">
 					<!-- CARDS-->
 					<div class="col s12 m6 l4 xl4" style="text-align:center">
 						<div class="card" id="kartu">
-							<img alt="Avatar" src="{{anggota.foto}}" style="width:300px;height:370px; border-radius: 50px 50px 0 0;">
+							<img alt="Avatar" src="{{anggotaMalang.foto}}" style="width:300px;height:370px; border-radius: 50px 50px 0 0;">
 							<div class="container">
-								<h4 id="cardTitle"><b>{{anggota.panggilan}}</b></h4>
+								<h4 id="cardTitle"><b>{{anggotaMalang.panggilan}}</b></h4>
 								<div id="deskripsi">
-									<p>{{anggota.nama}}<br>
-									{{anggota.ttl}}<br>
+									<p>{{anggotaMalang.nama}}<br>
+									{{anggotaMalang.ttl}}<br>
 									<!-- Teknik Informatika 2015<br> -->
 									 <!-- Universitas Brawijaya<br> -->
-									 {{anggota.domisili}}<br>
-									{{anggota.jabatan}}<br></p>
+									 {{anggotaMalang.domisili}}<br>
+									{{anggotaMalang.jabatan}}<br></p>
 								</div>
 							</div>
 							<div class="card-action" style="text-align:center;">
-								<a href="https://www.facebook.com/gallang.puttrattama?ref=br_rs" target="_blank"><img class="img-responsive sosmed circle width=" height="40" id="sosmed-facebook" src="asset/svg/facebook.jpg"></a> <a href="https://www.instagram.com/galangptrm/" target="_blank"><img class="img-responsive sosmed circle" height="40" id="sosmed-instagram" src="asset/svg/instagram.jpg" width="40"></a> <a href="http://line.me/ti/p/~galang_ptrm" target="_blank"><img class="img-responsive sosmed circle width=" height="40" id="sosmed-line" src="asset/svg/line.jpg"></a>
+								<a href="{{anggotaMalang.fb}}" target="_blank">
+									<img class="img-responsive sosmed circle width=" height="40" 
+									id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
+
+									<a href="{{anggotaMalang.ig}}" target="_blank">
+										<img class="img-responsive sosmed circle" height="40" 
+										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="40"></a> 
+
+										<a href="{{anggotaMalang.line}}" target="_blank">
+											<img class="img-responsive sosmed circle width=" height="40" 
+											id="sosmed-line" src="../../assets/svg/line.jpg"></a>
 							</div>
 						</div>
 					</div><!-- /CARDS-->
 				</div><!--/Ng-For -->
 				<!-- /PROFIL -->
+
+			</div>
+		</div>
+		
+
+		<div class="row content-profil">
+			<div class="container">
+				<div>
+					<a class=""><i class="material-icons" style="color:#004d40; font-size: 36px; padding-top:10px">person_pin</i><b id="tu">Profil Anggota Semarang</b></a>
+				</div>
+
+				<div *ngFor="let anggotaSemarang of anggotaSemarangs">
+					<!-- CARDS-->
+					<div class="col s12 m6 l4 xl4" style="text-align:center">
+						<div class="card" id="kartu">
+							<img alt="Avatar" src="{{anggotaSemarang.foto}}" style="width:300px;height:370px; border-radius: 50px 50px 0 0;">
+							<div class="container">
+								<h4 id="cardTitle"><b>{{anggotaSemarang.panggilan}}</b></h4>
+								<div id="deskripsi">
+									<p>{{anggotaSemarang.nama}}<br>
+									{{anggotaSemarang.ttl}}<br>
+									<!-- Teknik Informatika 2015<br> -->
+									 <!-- Universitas Brawijaya<br> -->
+									 {{anggotaSemarang.domisili}}<br>
+									{{anggotaSemarang.jabatan}}<br></p>
+								</div>
+							</div>
+							<div class="card-action" style="text-align:center;">
+								<a href="{{anggotaSemarang.fb}}" target="_blank">
+									<img class="img-responsive sosmed circle width=" height="40" 
+									id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
+
+									<a href="{{anggotaSemarang.ig}}" target="_blank">
+										<img class="img-responsive sosmed circle" height="40" 
+										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="40"></a> 
+
+										<a href="{{anggotaSemarang.line}}" target="_blank">
+											<img class="img-responsive sosmed circle width=" height="40" 
+											id="sosmed-line" src="../../assets/svg/line.jpg"></a>
+							</div>
+						</div>
+					</div><!-- /CARDS-->
+				</div><!--/Ng-For -->
+
 			</div>
 		</div>
 	</body>

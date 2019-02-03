@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from '../navbar.service';
 
+declare var $ : any
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -12,7 +14,12 @@ export class NavigationComponent implements OnInit {
   constructor(public nav : NavbarService) {  }
   
   ngOnInit() {
-    
-  } 
+  }
+
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
+    $('.sidenav').sidenav()
+  }
 
 }

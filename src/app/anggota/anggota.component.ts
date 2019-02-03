@@ -9,12 +9,14 @@ import { AnggotaService } from '../anggota.service';
 
 export class AnggotaComponent implements OnInit {
 
-  public anggotas = []
+  public anggotaMalangs = []
+  public anggotaSemarangs = []
 
   constructor(private _anggotaService : AnggotaService) { }
 
   ngOnInit() {
-    this.anggotas = this._anggotaService.getAnggota()
+    this.anggotaMalangs = this._anggotaService.getAnggotaMalang()
+    this.anggotaSemarangs = this._anggotaService.getAnggotaSemarang()
   }
 
 }

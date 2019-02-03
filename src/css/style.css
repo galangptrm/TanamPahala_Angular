@@ -51,6 +51,12 @@
 				color: #004d40;
 				margin: 2px;
 			}
+
+			#tu {
+				color:#004d40; 
+				font-size: 36px; 
+				padding-top:10px
+			}
 			
 			#textapaitu{
 				font-family: "Ubuntu";
@@ -89,6 +95,20 @@
 				margin-top:30px;
 				margin-bottom:0px;
 				}
+			
+			#card-action-btn-donasi {
+				text-align: center;
+			}
+
+			#btn-donasi {
+				padding:20px;
+				border-radius:50px;
+				height:100%;
+				color:white;
+				font-weight:600;
+				font-size:36px;
+			}	
+
 			.content-program {
 				background-color: rgb(170, 222, 135);}
 			.content-program .panel {
@@ -124,11 +144,13 @@
 				margin: 2px;
 				padding-bottom:10px;
 				}
+				
 			#distribusi-image{
 				border-radius:65px;
 				margin-bottom:5%;
 				overflow: hidden;
 			}
+			
 			.content-statistik{
 				font-size: 50px;
 				font-weight:800;
@@ -138,12 +160,15 @@
 				color: rgb(16, 74, 48);
 				margin: 2px;
 			}
+			.statistik-panel{
+				text-transform: uppercase;
+			}
 			.statistik-panel a {
-					width: 90%;
-					background-color: rgb(170, 222, 135);
-					font-family: "Ubuntu";
-					color: rgb(16, 74, 48);
-					margin-top: 10%;
+				width: 90%;
+				background-color: rgb(170, 222, 135);
+				font-family: "Ubuntu";
+				color: rgb(16, 74, 48);
+				margin-top: 10%;
 			}
 			#mar{
 				font-family: "Ubuntu";
@@ -177,7 +202,7 @@
 			#mtkami{
 				font-size: 50px;
 				font-weight: 800;
-				line-height: 1.1;
+				/* line-height: 1.1; */
 				font-family: "Ubuntu";
 				text-align: center;
 				color: #004d40;

@@ -2,8 +2,9 @@
 <!-- <input [(ngModel)]="quotes" type="text">
 <input #inputan type="text">
 <button (click)="onClick(inputan.type)" >Log</button> -->
+<title>Beranda Tanam Pahala</title>
 <body>
-	<div *ngIf="displayable" id="opening">
+	<div id="opening">
 		<h3 class="center" style="margin-top:0px"><br>
 		<br>
 		<br>
@@ -12,27 +13,33 @@
 		<p class="center" style="margin-top:0px">Semoga Allah meringankan langkah kita untuk selalu berada dalam kebaikan<br>
 		Mari Berkolaborasi!<br>
 		<!-- Modal Trigger --></p>
-		<div class="card-action" style="padding:8px">
-			<a class="btn modal-trigger yellow accent-4 center" data-target="modal1" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:36px;" target="_blank">DONASI</a>
+		<div id="card-action-btn-donasi" class="card-action" style="padding:8px">
+			<a id="btn-donasi" class="btn modal-trigger yellow accent-4 center" data-target="modal1" 
+			style="" (click)="onClick(this.id)"
+			target="_blank">DONASI</a>
 		</div><!-- Modal Trigger -->
 		<p></p>
 		<p class="center">Bersama Tanam Pahala, Membantu Sesama</p><!-- Modal Structure -->
 		<div class="modal" id="modal1" style="background-color:rgba(153, 255, 153, 0.6);">
 			<div class="modal-content">
 				<div class="modal-footer" style="background-color:rgba(0, 0, 0, 0);">
-					<a class="modal-close waves-effect waves btn-floating yellow accent-4" href="#!" style="color:white;"><i class="material-icons">close</i></a>
+					<a class="modal-close waves-effect waves btn-floating yellow accent-4" style="color:white;"><i class="material-icons">close</i></a>
 				</div>
 				<h1 id="mtkami" style="color:white">Pilih Region</h1><br>
 				<div class="row content">
 					<div class="container">
 						<div class="col s12 m6 l6 xl6">
 							<div class="card-action" style="padding:8px">
-								<a class="waves-effect waves btn-large yellow accent-4" href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0ATeruntuk%20investor%20amal%20semoga%20selalu%20dalam%20ridho%20dan%20rahmat-Nya.%20Mohon%20diisi%20terlebih%20dahulu%20ya.%0A%20%0A*Berkolaborasi%20Bersama%20Tanam%20Pahala*%0A%20%0ANama%3A%20%0AAlamat%3A%20%0AJenis%20Donasi%3A%0A%20%0A*Catatan%20_(Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan)_*%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%0ALine%3A%20@gog3912b" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:20px;" target="_blank">Tanam Pahala Malang</a>
+								<a class="waves-effect waves btn-large yellow accent-4" 
+								href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0ATeruntuk%20investor%20amal%20semoga%20selalu%20dalam%20ridho%20dan%20rahmat-Nya.%20Mohon%20diisi%20terlebih%20dahulu%20ya.%0A%20%0A*Berkolaborasi%20Bersama%20Tanam%20Pahala*%0A%20%0ANama%3A%20%0AAlamat%3A%20%0AJenis%20Donasi%3A%0A%20%0A*Catatan%20_(Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan)_*%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%0ALine%3A%20@gog3912b" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:20px;" 
+								target="_blank">Tanam Pahala Malang</a>
 							</div>
 						</div>
 						<div class="col s12 m6 l6 xl6">
 							<div class="card-action" style="padding:8px">
-								<a class="waves-effect waves btn-large yellow accent-4" href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0ATeruntuk%20investor%20amal%20semoga%20selalu%20dalam%20ridho%20dan%20rahmat-Nya.%20Mohon%20diisi%20terlebih%20dahulu%20ya.%0A%20%0A*Berkolaborasi%20Bersama%20Tanam%20Pahala*%0A%20%0ANama%3A%20%0AAlamat%3A%20%0AJenis%20Donasi%3A%0A%20%0A*Catatan%20_(Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan)_*%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%0ALine%3A%20@gog3912b" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:20px;" target="_blank">Tanam Pahala Semarang</a>
+								<a class="waves-effect waves btn-large yellow accent-4" 
+								href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0ATeruntuk%20investor%20amal%20semoga%20selalu%20dalam%20ridho%20dan%20rahmat-Nya.%20Mohon%20diisi%20terlebih%20dahulu%20ya.%0A%20%0A*Berkolaborasi%20Bersama%20Tanam%20Pahala*%0A%20%0ANama%3A%20%0AAlamat%3A%20%0AJenis%20Donasi%3A%0A%20%0A*Catatan%20_(Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan)_*%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%0ALine%3A%20@gog3912b" style="padding:20px;border-radius:50px;height:100%;color:white;font-weight:600;font-size:20px;" 
+								target="_blank">Tanam Pahala Semarang</a>
 							</div>
 						</div>
 					</div>
@@ -102,43 +109,47 @@
 				<div class="col s12 m12 l12 xl12" id="donasi-title">
 					<h1 id="jenisdonasi">JENIS DONASI</h1><br>
 				</div>
-				<div class="col s12 m6">
+				<div class="col s12 m6 l3">
 					<div class="card">
 						<div class="card-image">
-							<img src="../../assets/botol.jpg"> <span class="card-title" id="jdtitle">Botol Plastik</span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_one</i></a>
+							<img src="../../assets/botol.jpg"> <span class="card-title" id="jdtitle"></span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_one</i></a>
 						</div>
 						<div class="card-content">
-							<p id="jd">Termasuk dalam jenis sampah plastik. Merupakan jenis sampah terbanyak yang dihasilkan perharinya. Banyak sekali pemanfaatan sampah plastik di Indonesia terutama melalui Tanam Pahala.</p>
+							<!-- <p id="jd">Termasuk dalam jenis sampah plastik. Merupakan jenis sampah terbanyak yang dihasilkan perharinya. Banyak sekali pemanfaatan sampah plastik di Indonesia terutama melalui Tanam Pahala.</p> -->
+							<p id="jd" >Botol Plastik</p>
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m6">
+				<div class="col s12 m6 l3">
 					<div class="card">
 						<div class="card-image">
-							<img src="../../assets/kertas.jpg"> <span class="card-title" id="jdtitle">Kertas</span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_two</i></a>
+							<img src="../../assets/kertas.jpg"> <span class="card-title" id="jdtitle"></span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_two</i></a>
 						</div>
 						<div class="card-content">
-							<p id="jd">Konsumsi kertas di Indonesia juga termasuk dalam kategori sangat tinggi. Oleh karena itu, donasi yang kami terima juga berupa kertas bekas. Kertas jenis apapun yang sudah tidak terpakai bisa didonasikan.</p>
+							<!-- <p id="jd">Kertas Bekas, Konsumsi kertas di Indonesia juga termasuk dalam kategori sangat tinggi. Oleh karena itu, donasi yang kami terima juga berupa kertas bekas. Kertas jenis apapun yang sudah tidak terpakai bisa didonasikan.</p> -->
+							<p id="jd">Kertas Bekas</p>
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m6">
+				<div class="col s12 m6 l3">
 					<div class="card">
 						<div class="card-image">
-							<img src="../../assets/kardus.jpg"> <span class="card-title" id="jdtitle">Kardus</span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_3</i></a>
+							<img src="../../assets/kardus.jpg"> <span class="card-title" id="jdtitle"> </span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_3</i></a>
 						</div>
 						<div class="card-content">
-							<p id="jd">Kardus yang sudah tidak terpakai juga bisa didonasikan melalui tanam pahala. Ukuran dan jenis kardus apapun tidak menjadi masalah jika teman-teman memang ingin berpartisipas dan mendonasikannya.</p>
+							<!-- <p id="jd">Kardus yang sudah tidak terpakai juga bisa didonasikan melalui tanam pahala. Ukuran dan jenis kardus apapun tidak menjadi masalah jika teman-teman memang ingin berpartisipas dan mendonasikannya.</p> -->
+							<p id="jd">Kardus Bekas</p>
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m6">
+				<div class="col s12 m6 l3">
 					<div class="card">
 						<div class="card-image">
-							<img src="../../assets/baju.jpg"> <span class="card-title" id="jdtitle">Pakaian</span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_4</i></a>
+							<img src="../../assets/baju.jpg"> <span class="card-title" id="jdtitle"> </span> <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">looks_4</i></a>
 						</div>
 						<div class="card-content">
-							<p id="jd">Tanam Pahala juga menerima donasi berupa pakaian baik itu dalam bentuk kaos, celana, dan sejenisnya, yang nantinya bisa dikonversikan menjadi uang atau disalurkan langsung berupa barang jadi.</p>
+							<!-- <p id="jd">Tanam Pahala juga menerima donasi berupa pakaian baik itu dalam bentuk kaos, celana, dan sejenisnya, yang nantinya bisa dikonversikan menjadi uang atau disalurkan langsung berupa barang jadi.</p> -->
+							<p id="jd">Pakaian Bekas layak pakai</p>
 						</div>
 					</div>
 				</div>
@@ -156,46 +167,22 @@
 			<div class="col s12 m12 l12 xl12" id="statistik-title">
 				<h1 id="sttitle">STATISTIK TERBARU</h1><br>
 			</div>
-			<div class="col s12 m12 l3 xl3" id="statistik-panel" style="margin-bottom:50px;">
-				<div class="statistik-panel">
-					<img alt="" class="img-responsive" src="../../assets/donasi.png" style="max-width: 75%;">
-					<h4 id="st">JUMLAH<br>
-					DONATUR</h4>
-					<h1 id="st1"><b>37</b></h1>
-					<h4 id="st">ORANG</h4>
+
+			<div *ngFor="let statistik of statistiks">
+				<div class="col s12 m12 l3 xl3" id="statistik-panel" style="margin-bottom:50px;">
+					<div class="statistik-panel">
+						<img alt="" class="img-responsive" src="{{statistik.img}}" style="max-width: 75%;">
+						<h4 id="st">{{statistik.judul}}</h4>
+						<h1 id="st1"><b>{{statistik.jumlah}}</b></h1>
+						<h4 id="st">{{statistik.keterangan}}</h4>
+					</div>
 				</div>
 			</div>
-			<div class="col s12 m12 l3 xl3" id="statistik-panel" style="margin-bottom:50px;">
-				<div class="statistik-panel">
-					<img alt="" class="img-responsive" src="../../assets/bin.png" style="max-width: 75%;">
-					<h4 id="st">SAMPAH<br>
-					TERSISA</h4>
-					<h1 id="st1"><b>5</b></h1>
-					<h4 id="st">KILOGRAM</h4>
-				</div>
-			</div>
-			<div class="col s12 m12 l3 xl3" id="statistik-panel" style="margin-bottom:50px;">
-				<div class="statistik-panel">
-					<img alt="" class="img-responsive" src="../../assets/handshake.png" style="margin-bottom:20px; max-width: 75%;">
-					<h4 id="st">PENERIMA<br>
-					BANTUAN</h4>
-					<h1 id="st1"><b>409</b></h1>
-					<h4 id="st">PIHAK</h4>
-				</div>
-			</div>
-			<div class="col s12 m12 l3 xl3" id="statistik-panel" style="margin-bottom:50px;">
-				<div class="statistik-panel">
-					<img alt="" class="img-responsive" src="../../assets/report.png" style="max-width: 75%;">
-					<h4 id="st">SAMPAH<br>
-					TERKUMPUL</h4>
-					<h1 id="st1"><b>302</b></h1>
-					<h4 id="st">KILOGRAM</h4>
-				</div>
-			</div>
+			
 		</div>
 	</div><!-- /STATISTIK -->
-	<br>
-	<br>
+	<!-- <br>
+	<br> -->
 	<!-- KEGIATAN KAMI -->
 	<div style="padding-bottom:10px">
 		<div class="row">
@@ -203,51 +190,18 @@
 				<div class="col s12 m12 l12 xl12" id="mitra-title">
 					<h1 id="mtkami">GALERI KEGIATAN KAMI</h1><br>
 				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/bagitakjill.jpg"></div>
+				
+				<div  *ngFor="let gallery of galleries">
+					<div class="col s12 m4 l4 xl4">
+						<div materialize="materialboxed" class="card materialboxed">
+							<div class="card-image">
+								<img src="{{gallery.img}}">
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/3.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/1.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/baginasii.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/tpsemarangg.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/Actf.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/18304.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/dokk.jpg"></div>
-					</div>
-				</div>
-				<div class="col s12 m4 l4 xl4">
-					<div class="card materialboxed">
-						<div class="card-image"><img src="../../assets/recehan.jpg"></div>
-					</div>
-				</div>
+				<!-- end ngFor -->
+				
 			</div>
 		</div>
 	</div><!-- KEGIATAN KAMI -->
@@ -256,13 +210,23 @@
 	<br>
 	<!--TES<div class="panel panel-default hoverable">-->
 	 <!-- MITRA -->
-	<div class="row content-mitra" style="margin-bottom:0px;background-color:#e8f5e9;">
+	<div class="row content-mitra" 
+	style="margin-bottom:0px;background-color:#e8f5e9;">
 		<div class="container">
 			<div class="col s12 m12 l12 xl16" id="mitra-title">
 				<h1 id="mtkami">MITRA KAMI</h1><br>
 			</div>
+
 			<div class="carousel" style="padding-top:0px">
-				<a class="carousel-item" href="#three!"><img src="../../assets/mitra/ragambingkai.png"></a> <a class="carousel-item" href="#one!" style="padding-top:50px"><img src="../../assets/mitra/act.png"></a> <a class="carousel-item" href="#5!" style="padding-top:50px"><img src="../../assets/mitra/harfaa.png"></a> <a class="carousel-item" href="#four!"><img src="../../assets/mitra/creatingcatering.png"></a> <a class="carousel-item" href="#6!" style="padding-top:20px"><img src="../../assets/mitra/oemahku.png"></a> <a class="carousel-item" href="#two!"><img src="../../assets/mitra/maklum.png"></a> <a class="carousel-item" href="#7!" style="padding-top:6px"><img src="../../assets/mitra/anekajajanan.png"></a>
+
+				<div *ngFor="let mitra of mitras">
+					<div class="col s12 m4 l4 xl4">
+						<a class="carousel-item" href="{{mitra.url}}" target="_blank">
+							<img src="{{mitra.img}}">
+						</a> 
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
