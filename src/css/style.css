@@ -1,0 +1,274 @@
+			body{
+				font-family:"Ubuntu";
+				padding-top: 0px;
+			}
+			#btnOpening{
+				background-color: rgb(253, 215, 3);
+			}
+			#opening{
+				font-size:30px;
+				color:white;
+				font-family:"Ubuntu";
+				background-image:url("../assets/website/v2/rrr.png");
+				background-size:cover;
+				padding-bottom:200px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			#prr{
+				font-size: 36px;
+				font-weight:800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				color: rgb(16, 74, 48);
+				margin: 2px;
+			}
+			#celengansampah{
+				font-family: "";
+				text-align: center;
+				color: WHITE;
+				background-color: #004d40;
+				padding: 2%;
+				font-size: 36px;
+			}
+			#gambarcelengansampah{
+				max-width: 100%;
+				height: auto;
+				vertical-align: center;
+			}
+			
+			#program-panel {
+				border:black;
+				text-align:center;
+				margin-bottom: 20px;
+			}
+			
+			#apaitu{
+				font-size: 50px;
+				font-weight:800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: #004d40;
+				margin: 2px;
+			}
+
+			#tu {
+				color:#004d40; 
+				font-size: 36px; 
+				padding-top:10px
+			}
+			
+			#textapaitu{
+				font-family: "Ubuntu";
+				font-size:18px;
+				text-align: center;
+				color: rgb(16, 74, 48);
+			}
+			#about-text h4 {
+				font-weight: 500;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: #004d40;
+				font-size: 18px;
+				margin-top: 10px;
+				margin: 1.14rem 0 .912rem 0;
+				margin-bottom: 10px;
+			}
+			#about-image img {
+				display: block;
+				margin: auto;
+				width: 50%;
+			}
+			.panel-body {
+				padding: 15px;
+				background-color:rgb(249,249,249);
+				border-radius: 30px;
+			}
+			#prkami{
+				font-size: 50px;
+				font-weight: 800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: #004d40;
+				margin-top:30px;
+				margin-bottom:0px;
+				}
+			
+			#card-action-btn-donasi {
+				text-align: center;
+			}
+
+			#btn-donasi {
+				padding:20px;
+				border-radius:50px;
+				height:100%;
+				color:white;
+				font-weight:600;
+				font-size:36px;
+			}	
+
+			.content-program {
+				background-color: rgb(170, 222, 135);}
+			.content-program .panel {
+				background-color: rgb(249, 249, 249);
+				border-radius: 30px;
+				}
+			#jenisdonasi{
+				font-size: 50px;
+				font-weight:800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: #004d40;
+				margin: 2px;
+				}
+			.card-content{
+				font-weight: 500;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				background-color: #004d40;
+				font-size: 18px;
+				margin-top: 10px;
+				border-radius:2px;
+				margin: 1.14rem 0 .912rem 0;
+				margin-bottom: 10px;
+				}
+			#distribusi{
+				background:rgba(170,222,135,0.4);
+				font-family: "Ubuntu";
+				text-align: center;
+				color: rgb(16, 74, 48);
+				margin: 2px;
+				padding-bottom:10px;
+				}
+				
+			#distribusi-image{
+				border-radius:65px;
+				margin-bottom:5%;
+				overflow: hidden;
+			}
+			
+			.content-statistik{
+				font-size: 50px;
+				font-weight:800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: rgb(16, 74, 48);
+				margin: 2px;
+			}
+			.statistik-panel{
+				text-transform: uppercase;
+			}
+			.statistik-panel a {
+				width: 90%;
+				background-color: rgb(170, 222, 135);
+				font-family: "Ubuntu";
+				color: rgb(16, 74, 48);
+				margin-top: 10%;
+			}
+			#mar{
+				font-family: "Ubuntu";
+				font-size: 18px;
+				color: rgb(16, 74, 48);
+				border:3px;
+				border-radius:10px;
+				border-color:rgb(170, 222, 135);
+			}
+			#st{
+				font-size: 18px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			#st1{
+				margin-top: 0px;
+				font-size: 36px;
+				font-weight:500px;
+				font-style: bold;
+				margin-bottom: 10px;
+			}
+			#sttitle{
+				font-size: 50px;
+				font-weight: 800;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				text-align: center;
+				color: rgb(16, 74, 48);
+				margin: 2px;
+			}
+			#mtkami{
+				font-size: 50px;
+				font-weight: 800;
+				/* line-height: 1.1; */
+				font-family: "Ubuntu";
+				text-align: center;
+				color: #004d40;
+				margin: 2px;
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+			#jd{
+				font-family: "Ubuntu";
+				font-size: 18px;
+				text-align: center;
+				color: white;
+			}
+			#jdtitle{
+				font-family: "Ubuntu";
+				font-size: 30px;
+				text-align: center;
+				color: #004d40;
+			}
+			#gambar{
+				align:center;
+				width:auto;
+				padding:0px;
+				vertical-align:middle;
+			}
+			#bawahH4{
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+			}
+			#bawahH6{
+				font-size: 15px;
+				text-align: center;
+				color: white;
+			}
+			#gg{
+				radius:10px;
+			}
+			#foot{
+				margin:0px;
+			}
+			#kkjudul{
+				font-size: 23px;
+				font-weight: 700;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				color: rgb(16, 74, 48);
+			}
+			#kkdeskripsi{
+				font-size: 15px;
+				line-height: 1.1;
+				font-family: "Ubuntu";
+				color: rgb(16, 74, 48);
+				text-align:left
+			}
+			#kontenprogram{
+				background:#e8f5e9;
+			}
+			#kartu {
+				box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+				transition: 0.3s;
+				float:left;
+				border-radius: 50px;
+				width:300px;
+			}
+			.row content-mitra{
+				background:#e8f5e9;
+			}
