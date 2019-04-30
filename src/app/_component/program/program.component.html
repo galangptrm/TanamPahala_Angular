@@ -1,0 +1,64 @@
+<title>Program Tanam Pahala</title>
+<body>
+	<div class="row">
+		<div class="container">
+			<div class="col s12 m12 l12 xl16">
+				<a class="" href="#"><i class="material-icons" style="color:#004d40; font-size:36px; padding-top:10px">assignment</i><b class="heading1">Program Unggulan</b></a>
+				<p class="text1">Program-Program unggulan tanam pahala yang akan membantu memfasilitasi sahabat tanam pahala untuk beramal dan investasi. Sesuatu yang sudah biasa kita semua anggap tidak berharga yaitu sampah dapat kita putar menjadi sesuatu yang sangat bernilai. Barang yang dapat didonasikan dapat berupa sampah plastik, sampah kertas, sampah kardus maupun dalam bentuk baju bekas.</p>
+				<div><img class="responsive-img" src="../../assets/distribusi.png" style="margin-top:15px;margin-bottom:50px;"></div>
+			</div><br>
+			<br>
+			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
+				<div class="flex-center"><img src="../../assets/icon_sampah_pahala.png"></div>
+				<h3 class="center heading2">Program<br>
+				Sampah Amal</h3>
+				<p class="text2">Sampah Amal merupakan program komunitas Tanam Pahala yang memanfaatkan sampah daur ulang dan baju bekas untuk diinvestasikan dalam bentuk usaha yang diorientasikan pada berbagai kegiatan sosial.</p>
+			</div>
+			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
+				<div class="flex-center"><img src="../../assets/koin.png"></div>
+				<h3 class="center heading2">Program<br>
+				Celengan Amal</h3>
+				<p class="text2">Untuk teman-teman yang tidak memiliki sampah botol atau kertas namun sangat ingin berkolaborasi bersama untuk berbagi, bisa menggunakan uang receh sebagai donasi. Seluruh donasi yang teman-teman berikan akan kami investasikan dan keuntungannya akan diorientasikan untuk umat, terkhusus dibidang sosial.</p>
+			</div>
+			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
+				<div class="flex-center"><img src="../../assets/koin.png"></div>
+				<h3 class="center heading2">Realisasi<br>
+				Program</h3>
+				<p class="text2">Hasil dari donasi semua Sahabat Tanam Pahala akan di realisasikan dalam bentuk kegiatan kemanusiaan diantaranya pembagian takjil saat bulan Ramadhan, buka bersama teman-teman kita yang kurang beruntung, sosialisasi keberbagai sekolah dipedesaan, sumbangan kepada keluarga kita baik dalam lingkup Nasional maupun Internasional.</p>
+			</div>
+			<div class="col s12 m12 l12 xl12">
+				<a class="" href="#"><i class="material-icons" style="color:#004d40; font-size:36px; margin-top:50px">folder_open</i><b class="heading1">Dokumentasi Program</b></a>
+			</div>
+		</div>
+	</div><br>
+	<!-- Content Dokumentasi-->
+
+	<div *ngFor="let dokumentasi of dokumentasis">
+		<!-- Content Dokumentasi 1-->
+		<div class="row" style="margin-bottom:30px;">
+			<div class="container">
+				<div class="flex-center col s12 m12 l3 xl3">
+					<img src="{{dokumentasi.img}}" 
+					style="width:150px;height:150px;border-radius:2%">
+				</div>
+				<div class="col s12 m12 l9 xl9">
+					<h5 id="prrr">{{dokumentasi.judul}}</h5>
+					<p class="text2">{{dokumentasi.deskripsi}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+	<!-- Manfaat-->
+	<div class="row">
+		<div class="container">
+			<a class="" href="#"><i class="material-icons" style="margin-top:30px;color:rgb(16, 74, 48); font-size:36px">check_circle</i><b class="heading1">Manfaat yang Didapatkan</b></a>
+			<p class="text2">Banyak manfaat yang kita dapatkan jika kita ikut aktif berpartisipasi dalam Program Tanam Pahala diantaranya kita turut melestarikan lingkungan dari sampah yang kita donasikan , menumbuhkan kepekaan sosial, Amal Jariyah, dan mendukung kegiatan sosial. Kegiatan sosial diantaranya mendukung kegiatan buka puasa, berbagi nasi bungkus, membantu pasien yang kurang mampu. Untuk nominal dan kuantitasnya Sahabat Tanam Pahala tidak perlu khawatir, sekecil apapun pemberian dari Sahabat Tanam Pahala pasti akan sangat bermanfaat bagi sesama. Jadi, mari bersama Tanam Pahala mewujudkan masyarakat yang peduli sesama.</p><br>
+			<p class="center" id="khh">TUHAN<br>
+			Sering kali memberesi urusan kita<br>
+			Disaat kita memberesi urusan orang lain</p>
+			<p class="center" id="kh">Dr. KH. Achmad Hasyim Muzadi</p>
+		</div>
+	</div><!-- /CONTENT -->
+</body>
