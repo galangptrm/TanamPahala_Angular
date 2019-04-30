@@ -5,8 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+<<<<<<< HEAD
 import { AnggotaService } from './_service/anggota/anggota.service';
 import { BerandaService } from './_service/beranda/beranda.service';
+=======
+import { AnggotaService } from './anggota.service';
+import { BerandaService } from './beranda.service';
+>>>>>>> origin/master
 
 @NgModule({
   declarations: [

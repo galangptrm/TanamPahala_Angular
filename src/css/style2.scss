@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $colors : (
     GreenLight : #85C33D,
     GreenLighter : #AADE87,
@@ -366,3 +367,24 @@ body {
         margin: auto;
     }
 }
+=======
+$colors : (
+    GreenLight : #85C33D,
+    GreenDark : #145E3E,
+    Amber : #FEBA00,
+    White : #FFFFFF,
+    Black : #000000
+);
+
+@function color($color-name){
+    @return map-get($colors , $color-name)
+}
+
+body {
+    font-family: 'Ubuntu';
+    padding-top : 0;
+}
+
+
+
+>>>>>>> origin/master

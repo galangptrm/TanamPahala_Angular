@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+<<<<<<< HEAD
 import { BodyComponent } from './_component/body/body.component';
 import { NavigationComponent } from './_component/navigation/navigation.component';
 import { FooterComponent } from './_component/footer/footer.component';
@@ -9,6 +10,16 @@ import { TentangKamiComponent } from './_component/tentang-kami/tentang-kami.com
 import { AnggotaComponent } from './_component/anggota/anggota.component';
 import { HeadComponent } from './_component/head/head.component';
 import { PageNotFoundComponent } from './_component/page-not-found/page-not-found.component';
+=======
+import { BodyComponent } from './body/body.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProgramComponent } from './program/program.component';
+import { TentangKamiComponent } from './tentang-kami/tentang-kami.component';
+import { AnggotaComponent } from './anggota/anggota.component';
+import { HeadComponent } from './head/head.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+>>>>>>> origin/master
 
 const routes: Routes = [
   { path : '', redirectTo : '/beranda', pathMatch : 'full' },
@@ -23,7 +34,11 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
+<<<<<<< HEAD
     RouterModule.forRoot(routes, { useHash:true })
+=======
+    RouterModule.forRoot(routes)
+>>>>>>> origin/master
   ]
 })
 
