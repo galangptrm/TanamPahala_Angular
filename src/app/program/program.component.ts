@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProgramService } from '../program.service';
+import { ProgramService } from '../_service/program.service';
 
 declare var $ : any
 
@@ -14,12 +14,12 @@ declare var $ : any
 export class ProgramComponent implements OnInit {
 
   public dokumentasis = []
+  public programs = []
 
-  constructor( private _programService : ProgramService ) { }
+  constructor( private _programService : ProgramService) { }
 
   ngOnInit() {
-    this.dokumentasis = this._programService.getDokumentasi()
-
+    this.dokumentasis = this._programService.getDokumentasi();
   }
 
 }

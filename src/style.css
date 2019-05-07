@@ -1,4 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 @import  './css/materialize.min.css';
 @import  './css/slick.css';
-@import  './css/style.css';
+@import  '../src/css/style.scss';

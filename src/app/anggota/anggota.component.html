@@ -10,7 +10,7 @@
 					<!-- CARDS-->
 					<div class="col s12 m6 l4 xl4" style="text-align:center">
 						<div class="card" id="kartu">
-							<img alt="Avatar" src="{{anggotaMalang.foto}}" style="width:300px;height:370px; border-radius: 50px 50px 0 0;">
+							<img class="avatar" alt="Avatar" src="{{anggotaMalang.foto}}" style="">
 							<div class="container">
 								<h4 id="cardTitle"><b>{{anggotaMalang.panggilan}}</b></h4>
 								<div id="deskripsi">
@@ -24,16 +24,16 @@
 							</div>
 							<div class="card-action" style="text-align:center;">
 								<a href="{{anggotaMalang.fb}}" target="_blank">
-									<img class="img-responsive sosmed circle width=" height="40" 
+									<img class="img-responsive sosmed circle width=" height="20" 
 									id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
 
 									<a href="{{anggotaMalang.ig}}" target="_blank">
-										<img class="img-responsive sosmed circle" height="40" 
-										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="40"></a> 
+										<img class="img-responsive sosmed circle" height="20" 
+										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
 
-										<a href="{{anggotaMalang.line}}" target="_blank">
-											<img class="img-responsive sosmed circle width=" height="40" 
-											id="sosmed-line" src="../../assets/svg/line.jpg"></a>
+									<a href="{{anggotaMalang.line}}" target="_blank">
+										<img class="img-responsive sosmed circle width=" height="20" 
+										id="sosmed-line" src="../../assets/svg/line.jpg"></a>
 							</div>
 						</div>
 					</div><!-- /CARDS-->
@@ -54,7 +54,7 @@
 					<!-- CARDS-->
 					<div class="col s12 m6 l4 xl4" style="text-align:center">
 						<div class="card" id="kartu">
-							<img alt="Avatar" src="{{anggotaSemarang.foto}}" style="width:300px;height:370px; border-radius: 50px 50px 0 0;">
+							<img class="avatar" alt="Avatar" src="{{anggotaSemarang.foto}}" style="">
 							<div class="container">
 								<h4 id="cardTitle"><b>{{anggotaSemarang.panggilan}}</b></h4>
 								<div id="deskripsi">
@@ -68,16 +68,16 @@
 							</div>
 							<div class="card-action" style="text-align:center;">
 								<a href="{{anggotaSemarang.fb}}" target="_blank">
-									<img class="img-responsive sosmed circle width=" height="40" 
+									<img class="img-responsive sosmed circle width=" height="20" 
 									id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
 
-									<a href="{{anggotaSemarang.ig}}" target="_blank">
-										<img class="img-responsive sosmed circle" height="40" 
-										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="40"></a> 
+								<a href="{{anggotaSemarang.ig}}" target="_blank">
+									<img class="img-responsive sosmed circle" height="20" 
+									id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
 
-										<a href="{{anggotaSemarang.line}}" target="_blank">
-											<img class="img-responsive sosmed circle width=" height="40" 
-											id="sosmed-line" src="../../assets/svg/line.jpg"></a>
+								<a href="{{anggotaSemarang.line}}" target="_blank">
+									<img class="img-responsive sosmed circle width=" height="20" 
+									id="sosmed-line" src="../../assets/svg/line.jpg"></a>
 							</div>
 						</div>
 					</div><!-- /CARDS-->
@@ -85,4 +85,47 @@
 
 			</div>
 		</div>
+
+		<div class="row content-profil">
+			<div class="container">
+				<div>
+					<a class=""><i class="material-icons" style="color:#004d40; font-size: 36px; padding-top:10px">person_pin</i><b id="tu">Profil Anggota Surabaya</b></a>
+				</div>
+
+				<div *ngFor="let anggotaSurabaya of anggotaSurabayas">
+					<!-- CARDS-->
+					<div class="col s12 m6 l4 xl4" style="text-align:center">
+						<div class="card" id="kartu">
+							<img class="avatar" alt="Avatar" src="{{anggotaSurabaya.foto}}" style="">
+							<div class="container">
+								<h4 id="cardTitle"><b>{{anggotaSurabaya.panggilan}}</b></h4>
+								<div id="deskripsi">
+									<p>{{anggotaSurabaya.nama}}<br>
+									{{anggotaSurabaya.ttl}}<br>
+									<!-- Teknik Informatika 2015<br> -->
+									 <!-- Universitas Brawijaya<br> -->
+									 {{anggotaSurabaya.domisili}}<br>
+									{{anggotaSurabaya.jabatan}}<br></p>
+								</div>
+							</div>
+							<div class="card-action" style="text-align:center;">
+								<a href="{{anggotaSurabaya.fb}}" target="_blank">
+									<img class="img-responsive sosmed circle width=" height="20" 
+									id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
+
+								<a href="{{anggotaSurabaya.ig}}" target="_blank">
+									<img class="img-responsive sosmed circle" height="20" 
+									id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
+
+								<a href="{{anggotaSurabaya.line}}" target="_blank">
+									<img class="img-responsive sosmed circle width=" height="20" 
+									id="sosmed-line" src="../../assets/svg/line.jpg"></a>
+							</div>
+						</div>
+					</div><!-- /CARDS-->
+				</div><!--/Ng-For -->
+
+			</div>
+		</div>
+
 	</body>

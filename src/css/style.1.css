@@ -4,7 +4,7 @@ body {
 }
 
 #btnOpening {
-  background-color: #FEBA00;
+  background-color: #fdd703;
 }
 
 #opening {
@@ -118,29 +118,8 @@ body {
   font-size: 36px;
 }
 
-.temp {
-  padding: 20px;
-  border-radius: 50px;
-  height: 100%;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.amber {
-  background-color: #FEBA00;
-}
-
-.green1 {
-  background-color: #145E3E;
-}
-
-.btn-wa {
-  color: #000000;
-}
-
 .content-program {
-  background-color: #85C33D;
+  background-color: #aade87;
 }
 
 .content-program .panel {
@@ -321,8 +300,8 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   float: left;
-  border-radius: 10px;
-  width: 100%;
+  border-radius: 50px;
+  width: 300px;
 }
 
 .row content-mitra {
@@ -339,30 +318,10 @@ body {
 
 .carousel-img img {
   margin: auto;
-  max-width: 70%;
-  max-height: auto;
-}
-
-.avatar {
-  -webkit-filter: grayscale(70%);
-          filter: grayscale(70%);
-  margin-top: 5%;
-  width: 90%;
-  height: 90%;
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 10px;
-}
-
-.imgg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.imgg img {
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */
