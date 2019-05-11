@@ -1,6 +1,70 @@
+.amber {
+  background-color: #FEBA00;
+}
+
+.green1 {
+  background-color: #145E3E;
+}
+
+.tgreen1 {
+  color: #104a30;
+}
+
+.twhite {
+  color: #FFFFFF;
+}
+
 body {
   font-family: "Ubuntu";
   padding-top: 0px;
+}
+
+.h1 {
+  font-size: 26pt;
+}
+
+.h2 {
+  font-size: 22pt;
+}
+
+.p1 {
+  font-size: 16pt;
+}
+
+.p2 {
+  font-size: 14pt;
+}
+
+.p3 {
+  font-size: 12pt;
+}
+
+.b1 {
+  font-weight: 600;
+}
+
+.b2 {
+  font-weight: 400;
+}
+
+.b3 {
+  font-weight: 200;
+}
+
+.b4 {
+  font-weight: 100;
+}
+
+.b5 {
+  font-weight: 50;
+}
+
+.b6 {
+  font-weight: 25;
+}
+
+.b0 {
+  font-weight: 0;
 }
 
 #btnOpening {
@@ -8,7 +72,6 @@ body {
 }
 
 #opening {
-  font-size: 30px;
   color: white;
   font-family: "Ubuntu";
   background-image: url("../assets/website/v2/rrr.png");
@@ -17,122 +80,69 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#prr {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  color: #104a30;
-  margin: 2px;
-}
-
-#celengansampah {
-  font-family: "";
-  text-align: center;
+.subheader {
   color: WHITE;
   background-color: #104a30;
   padding: 2%;
-  font-size: 36px;
 }
 
-#gambarcelengansampah {
-  max-width: 100%;
-  height: auto;
-  vertical-align: center;
+.left-aligned {
+  text-align: left;
 }
 
-#program-panel {
-  border: black;
+.program-panel {
   text-align: center;
   margin-bottom: 20px;
 }
 
-#apaitu {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
-}
-
-#tu {
-  color: #104a30;
-  font-size: 36px;
-  padding-top: 10px;
-}
-
-#textapaitu {
-  font-family: "Ubuntu";
-  font-size: 18px;
-  text-align: center;
-  color: #104a30;
-}
-
-#about-text h4 {
-  font-weight: 500;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  font-size: 18px;
-  margin-top: 10px;
-  margin: 1.14rem 0 .912rem 0;
-  margin-bottom: 10px;
+#about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #about-image img {
-  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin: auto;
   width: 50%;
 }
 
+#about-image-tentang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+}
+
+#about-image-tentang img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+  width: 40%;
+}
+
 .panel-body {
   padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
-#prkami {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 1.1;
+.sub-judul {
   font-family: "Ubuntu";
-  text-align: center;
   color: #104a30;
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
-
-#card-action-btn-donasi {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.1;
 }
 
 #btn-donasi {
   padding: 20px;
-  border-radius: 50px;
+  border-radius: 20px;
   height: 100%;
   color: white;
-  font-weight: 600;
-  font-size: 36px;
-}
-
-.temp {
-  padding: 20px;
-  border-radius: 50px;
-  height: 100%;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-.amber {
-  background-color: #FEBA00;
-}
-
-.green1 {
-  background-color: #145E3E;
 }
 
 .btn-wa {
@@ -148,52 +158,19 @@ body {
   border-radius: 30px;
 }
 
-#jenisdonasi {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
-}
-
 .card-content {
-  font-weight: 500;
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
   background-color: #104a30;
-  font-size: 18px;
   margin-top: 10px;
   border-radius: 2px;
   margin: 1.14rem 0 .912rem 0;
   margin-bottom: 10px;
 }
 
-#distribusi {
-  background: rgba(170, 222, 135, 0.4);
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
-  padding-bottom: 10px;
-}
-
-#distribusi-image {
-  border-radius: 65px;
-  margin-bottom: 5%;
-  overflow: hidden;
-}
-
 .content-statistik {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
+  margin-bottom: 40px;
 }
 
 .statistik-panel {
@@ -208,125 +185,44 @@ body {
   margin-top: 10%;
 }
 
-#mar {
-  font-family: "Ubuntu";
-  font-size: 18px;
-  color: #104a30;
-  border: 3px;
-  border-radius: 10px;
-  border-color: #aade87;
-}
-
-#st {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#st1 {
-  margin-top: 0px;
-  font-size: 36px;
-  font-weight: 500px;
-  font-style: bold;
-  margin-bottom: 10px;
-}
-
-#sttitle {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
-}
-
-#mtkami {
-  font-size: 50px;
-  font-weight: 800;
-  /* line-height: 1.1; */
-  font-family: "Ubuntu";
-  text-align: center;
-  color: #104a30;
-  margin: 2px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-#jd {
-  font-family: "Ubuntu";
-  font-size: 18px;
-  text-align: center;
-  color: white;
-}
-
-#jdtitle {
-  font-family: "Ubuntu";
-  font-size: 30px;
-  text-align: center;
-  color: #104a30;
-}
-
-#gambar {
-  align: center;
-  width: auto;
-  padding: 0px;
-  vertical-align: middle;
-}
-
-#bawahH4 {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-}
-
-#bawahH6 {
-  font-size: 15px;
-  text-align: center;
-  color: white;
-}
-
-#gg {
-  radius: 10px;
-}
-
 #foot {
   margin: 0px;
-}
-
-#kkjudul {
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  color: #104a30;
-}
-
-#kkdeskripsi {
-  font-size: 15px;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  color: #104a30;
-  text-align: left;
 }
 
 #kontenprogram {
   background: #e8f5e9;
 }
 
-#kartu {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  float: left;
-  border-radius: 10px;
+.kartu-profil-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+}
+
+@media (max-width: 768px) {
+  .kartu-profil-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .kartu-profil-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.kartu-profil {
   width: 100%;
 }
 
-.row content-mitra {
-  background: #e8f5e9;
+#content-mitra {
+  background-color: #e8f5e9;
+  margin-bottom: 0px;
 }
 
 .carousel-img {
@@ -338,14 +234,17 @@ body {
 }
 
 .carousel-img img {
-  margin: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   max-width: 70%;
   max-height: auto;
+  margin: auto;
 }
 
 .avatar {
-  -webkit-filter: grayscale(70%);
-          filter: grayscale(70%);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
   margin-top: 5%;
   width: 90%;
   height: 90%;
@@ -354,15 +253,21 @@ body {
   border-radius: 10px;
 }
 
-.imgg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.icon-svg {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  width: 25%;
 }
 
-.imgg img {
+.icon-svg a {
   margin: auto;
+}
+
+.footer-copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
