@@ -136,6 +136,11 @@ body{
     border-radius: 20px;
 }
 
+.panel-img {
+    width: 150px;
+    height: 150px;
+}
+
 .sub-judul {
     font-family: "Ubuntu";
     color: color('Green1');
@@ -252,5 +257,10 @@ body{
 .footer-copyright {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.post-content {
+    padding-top: 50px;
+    height: 100%;
 }
 

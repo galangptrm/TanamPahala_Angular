@@ -8,8 +8,8 @@
 				</h1>
 				
 				<p class="p3">Program-Program unggulan tanam pahala yang akan membantu memfasilitasi 
-					sahabat tanam pahala untuk beramal dan investasi. Sesuatu yang sudah biasa kita 
-					semua anggap tidak berharga yaitu sampah dapat kita putar menjadi sesuatu yang 
+					sahabat tanam pahala untuk beramal dan investasi. Sampah yang kita 
+					anggap tidak berharga dapat kita putar menjadi sesuatu yang 
 					sangat bernilai. Barang yang dapat didonasikan dapat berupa sampah plastik, 
 					sampah kertas, sampah kardus maupun dalam bentuk baju bekas.</p>
 				<div><img class="responsive-img" src="../../assets/icon/distribusi.png"></div>
@@ -18,31 +18,28 @@
 			<br>
 			<div class="col s12 m12 l4 xl4 program-panel">
 				<div class="panel-body">
-					<img src="../../assets/icon/icon_sampah_pahala.png">
+					<img class="panel-img" src="../../assets/icon/icon_sampah_pahala.png">
 					<h1 class="center p1 b3 subheader">Sampah Pahala</h1>
-					<p class="p3">Sampah Amal merupakan program komunitas Tanam Pahala yang memanfaatkan 
-						sampah daur ulang dan baju bekas untuk diinvestasikan dalam bentuk usaha yang 
-						diorientasikan pada berbagai kegiatan sosial.</p>
+					<p class="p3">
+						Memanfaatkan sampah daur ulang dan baju bekas untuk diinvestasikan 
+						dalam bentuk usaha yang diorientasikan pada berbagai kegiatan sosial.</p>
 				</div>
 			</div>
 			<div class="col s12 m12 l4 xl4 program-panel">
 				<div class="panel-body">
-					<img src="../../assets/icon/koin.png">
+					<img class="panel-img" src="../../assets/icon/koin.png">
 					<h1 class="center p1 b3 subheader">Celengan Amal</h1>
-					<p class="p3">Untuk teman-teman yang tidak memiliki sampah botol atau kertas namun sangat 
-						ingin berkolaborasi bersama untuk berbagi, bisa menggunakan uang receh sebagai donasi. 
+					<p class="p3">Uang receh sebagai donasi. 
 						Seluruh donasi yang teman-teman berikan akan kami investasikan dan keuntungannya akan 
-						diorientasikan untuk umat, terkhusus dibidang sosial.</p>
+						diorientasikan untuk umat, terkhusus di bidang sosial.</p>
 				</div>
 			</div>
 			<div class="col s12 m12 l4 xl4 program-panel">
 				<div class="panel-body">
-					<img src="../../assets/icon/koin.png">
+					<img class="panel-img" src="../../assets/icon/social-care.png">
 					<h1 class="center p1 b3 subheader">Realisasi</h1>
 					<p class="p3">Hasil dari donasi semua Sahabat Tanam Pahala akan di realisasikan dalam 
-						bentuk kegiatan kemanusiaan diantaranya pembagian takjil saat bulan Ramadhan, buka 
-						bersama teman-teman kita yang kurang beruntung, sosialisasi keberbagai sekolah dipedesaan, 
-						sumbangan kepada keluarga kita baik dalam lingkup Nasional maupun Internasional.</p>
+						bentuk kegiatan kemanusiaan baik dalam lingkup Nasional maupun Internasional.</p>
 				</div>
 			</div>
 		</div>
@@ -60,25 +57,13 @@
 			</div>
 			<div *ngFor="let post of posts">
 				<!-- Content Dokumentasi 1-->
-				<p class="col s12 m4 l3 xl3">
+				<div class="col s12 m4 l3 xl3" style="margin-top:20px;">
 					<img src="{{post.img}}" 
-					style="align:left;width:100%;height:120px;border-radius:2%">
-				</p>
-				<div class="col s12 m8 l9 xl9">
-					<p class="p2">{{post.data.title}}</p>
-					<p class="p3">{{post.data.excerpt}}</p>
+					style="align:left; width:100%; height:120px; border-radius:2%">
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<div *ngFor="let program of programs">
-		<!-- Content Dokumentasi 1-->
-		<div class="row" style="margin-bottom:30px;">
-			<div class="container">
-				<div class="col s12 m12 l3 xl3">
-					<img src="{{program.id}}" 
-					style="align:left;width:150px;height:150px;border-radius:2%">
+				<div class="col s12 m8 l9 xl9" style="margin-top:20px;">
+					<div class="p2 b1">{{post.data.title}}</div>
+					<p class="p3">{{post.data.excerpt}}</p>
 				</div>
 			</div>
 		</div>

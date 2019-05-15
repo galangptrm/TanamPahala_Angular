@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramService } from '../_service/program.service';
-import { forEach } from '@angular/router/src/utils/collection';
+// import { forEach } from '@angular/router/src/utils/collection';
 
 declare var $ : any
 
