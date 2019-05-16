@@ -167,7 +167,7 @@ body{
 .content-program .panel {
     background-color: rgb(249, 249, 249);
     border-radius: 30px;
-    }
+}
 .card-content{
     line-height: 1.1;
     font-family: "Ubuntu";
@@ -177,7 +177,7 @@ body{
     border-radius:2px;
     margin: 1.14rem 0 .912rem 0;
     margin-bottom: 10px;
-    }
+}
 
 .content-statistik{
     margin-bottom: 40px;
@@ -264,3 +264,15 @@ body{
     height: 100%;
 }
 
+.artikel-img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-sosmed {
+    display: flex;
+    
+    a {
+        margin: auto;
+    }
+}

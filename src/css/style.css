@@ -280,4 +280,19 @@ body {
   padding-top: 50px;
   height: 100%;
 }
+
+.artikel-img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-sosmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-sosmed a {
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */

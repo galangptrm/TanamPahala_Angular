@@ -11,11 +11,13 @@ import { AnggotaService } from './_service/anggota.service';
 import { BerandaService } from './_service/beranda.service';
 import { ProgramService } from './_service/program.service';
 import { NavbarService } from './_service/navbar.service';
+import { ProgramDetailComponent } from './program-detail/program-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    ProgramDetailComponent
   ],
   imports: [
     BrowserModule,

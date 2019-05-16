@@ -9,11 +9,13 @@ import { TentangKamiComponent } from './tentang-kami/tentang-kami.component';
 import { AnggotaComponent } from './anggota/anggota.component';
 import { HeadComponent } from './head/head.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProgramDetailComponent } from './program-detail/program-detail.component';
 
 const routes: Routes = [
   { path : '', redirectTo : '/beranda', pathMatch : 'full' },
   { path : 'beranda' , component : BodyComponent},
   { path : 'program', component : ProgramComponent },
+  { path : 'artikel', component : ProgramDetailComponent },
   { path : 'anggota', component : AnggotaComponent },
   { path : 'tentang', component : TentangKamiComponent },
   { path : "**", component : PageNotFoundComponent }
