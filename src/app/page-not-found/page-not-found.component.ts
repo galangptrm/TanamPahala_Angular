@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarService } from '../navbar.service';
-import { FooterService } from '../footer.service';
+import { NavbarService } from '../_service/navbar.service';
+import { FooterService } from '../_service/footer.service';
 
 @Component({
   selector: 'app-page-not-found',

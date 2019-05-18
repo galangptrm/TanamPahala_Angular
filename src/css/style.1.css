@@ -1,11 +1,10 @@
 body {
-<<<<<<< HEAD
   font-family: "Ubuntu";
   padding-top: 0px;
 }
 
 #btnOpening {
-  background-color: #FEBA00;
+  background-color: #fdd703;
 }
 
 #opening {
@@ -18,74 +17,20 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.heading1 {
+#prr {
   font-size: 36px;
   font-weight: 800;
   line-height: 1.1;
   font-family: "Ubuntu";
-  color: #145E3E;
+  color: #104a30;
   margin: 2px;
-}
-
-.heading2 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  color: #145E3E;
-  margin: 2px;
-}
-
-.heading3 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.1;
-  font-family: "Ubuntu";
-  color: #145E3E;
-  margin: 2px;
-}
-
-.subheading1 {
-  font-size: 24px;
-  color: black;
-  font-weight: 200;
-}
-
-.subheading2 {
-  font-size: 20px;
-  color: black;
-  font-weight: 100;
-}
-
-.subheading3 {
-  font-size: 16px;
-  color: black;
-  font-weight: 50;
-}
-
-.text1 {
-  font-size: 20px;
-  color: black;
-  margin: 5px;
-}
-
-.text2 {
-  font-size: 16px;
-  color: black;
-  margin: 5px;
-}
-
-.text3 {
-  font-size: 14px;
-  color: black;
-  margin: 5px;
 }
 
 #celengansampah {
   font-family: "";
   text-align: center;
   color: WHITE;
-  background-color: #004D40;
+  background-color: #104a30;
   padding: 2%;
   font-size: 36px;
 }
@@ -108,12 +53,12 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #004D40;
+  color: #104a30;
   margin: 2px;
 }
 
 #tu {
-  color: #004D40;
+  color: #104a30;
   font-size: 36px;
   padding-top: 10px;
 }
@@ -122,7 +67,7 @@ body {
   font-family: "Ubuntu";
   font-size: 18px;
   text-align: center;
-  color: #145E3E;
+  color: #104a30;
 }
 
 #about-text h4 {
@@ -130,7 +75,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #004D40;
+  color: #104a30;
   font-size: 18px;
   margin-top: 10px;
   margin: 1.14rem 0 .912rem 0;
@@ -155,7 +100,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #004D40;
+  color: #104a30;
   margin-top: 30px;
   margin-bottom: 0px;
 }
@@ -174,7 +119,7 @@ body {
 }
 
 .content-program {
-  background-color: #AADE87;
+  background-color: #aade87;
 }
 
 .content-program .panel {
@@ -188,7 +133,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #004D40;
+  color: #104a30;
   margin: 2px;
 }
 
@@ -197,7 +142,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  background-color: #004D40;
+  background-color: #104a30;
   font-size: 18px;
   margin-top: 10px;
   border-radius: 2px;
@@ -209,7 +154,7 @@ body {
   background: rgba(170, 222, 135, 0.4);
   font-family: "Ubuntu";
   text-align: center;
-  color: #145E3E;
+  color: #104a30;
   margin: 2px;
   padding-bottom: 10px;
 }
@@ -226,7 +171,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #145E3E;
+  color: #104a30;
   margin: 2px;
 }
 
@@ -236,19 +181,19 @@ body {
 
 .statistik-panel a {
   width: 90%;
-  background-color: #AADE87;
+  background-color: #aade87;
   font-family: "Ubuntu";
-  color: #145E3E;
+  color: #104a30;
   margin-top: 10%;
 }
 
 #mar {
   font-family: "Ubuntu";
   font-size: 18px;
-  color: #145E3E;
+  color: #104a30;
   border: 3px;
   border-radius: 10px;
-  border-color: #AADE87;
+  border-color: #aade87;
 }
 
 #st {
@@ -271,7 +216,7 @@ body {
   line-height: 1.1;
   font-family: "Ubuntu";
   text-align: center;
-  color: #145E3E;
+  color: #104a30;
   margin: 2px;
 }
 
@@ -281,7 +226,7 @@ body {
   /* line-height: 1.1; */
   font-family: "Ubuntu";
   text-align: center;
-  color: #004D40;
+  color: #104a30;
   margin: 2px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -298,7 +243,7 @@ body {
   font-family: "Ubuntu";
   font-size: 30px;
   text-align: center;
-  color: #004D40;
+  color: #104a30;
 }
 
 #gambar {
@@ -334,19 +279,19 @@ body {
   font-weight: 700;
   line-height: 1.1;
   font-family: "Ubuntu";
-  color: #145E3E;
+  color: #104a30;
 }
 
 #kkdeskripsi {
   font-size: 15px;
   line-height: 1.1;
   font-family: "Ubuntu";
-  color: #145E3E;
+  color: #104a30;
   text-align: left;
 }
 
 #kontenprogram {
-  background: white;
+  background: #e8f5e9;
 }
 
 #kartu {
@@ -360,46 +305,23 @@ body {
 }
 
 .row content-mitra {
-  background: white;
+  background: #e8f5e9;
 }
 
-.carousel-item {
+.carousel-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.carousel-item img {
+.carousel-img img {
   margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-
-.c-greendark {
-  color: #004D40;
-}
-
-.c-greendark a {
-  color: #004D40;
-}
-
-.c-greendark p {
-  color: #004D40;
-}
-
-.c-greendark i {
-  color: #004D40;
-}
-
-.flex-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.flex-center img {
-  margin: auto;
-=======
-  font-family: 'Ubuntu';
-  padding-top: 0;
->>>>>>> origin/master
-}
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BerandaService } from '../beranda.service';
+import { BerandaService } from '../_service/beranda.service';
 
 declare var $ : any
 

@@ -3,48 +3,70 @@
 	<div class="row">
 		<div class="container">
 			<div class="col s12 m12 l12 xl16">
-				<a class="" href="#"><i class="material-icons" style="color:#004d40; font-size:36px; padding-top:10px">assignment</i><b id="prr">Program Unggulan</b></a>
-				<p id="textp">Program-Program unggulan tanam pahala yang akan membantu memfasilitasi sahabat tanam pahala untuk beramal dan investasi. Sesuatu yang sudah biasa kita semua anggap tidak berharga yaitu sampah dapat kita putar menjadi sesuatu yang sangat bernilai. Barang yang dapat didonasikan dapat berupa sampah plastik, sampah kertas, sampah kardus maupun dalam bentuk baju bekas.</p>
-				<div><img class="responsive-img" src="../../assets/distribusi.png" style="margin-top:15px;margin-bottom:50px;"></div>
-			</div><br>
+				<h1 class="center h2 b2 sub-judul" href="#"><i class="material-icons">assignment</i>
+					Program Unggulan
+				</h1>
+				
+				<p class="p3">Program-Program unggulan tanam pahala yang akan membantu memfasilitasi 
+					sahabat tanam pahala untuk beramal dan investasi. Sampah yang kita 
+					anggap tidak berharga dapat kita putar menjadi sesuatu yang 
+					sangat bernilai. Barang yang dapat didonasikan dapat berupa sampah plastik, 
+					sampah kertas, sampah kardus maupun dalam bentuk baju bekas.</p>
+				<div><img class="responsive-img" src="../../assets/icon/distribusi.png"></div>
+			</div>
 			<br>
-			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
-				<div id="imgg"><img src="../../assets/icon_sampah_pahala.png"></div>
-				<h3 class="center" id="prrr">Program<br>
-				Sampah Amal</h3>
-				<p id="textp">Sampah Amal merupakan program komunitas Tanam Pahala yang memanfaatkan sampah daur ulang dan baju bekas untuk diinvestasikan dalam bentuk usaha yang diorientasikan pada berbagai kegiatan sosial.</p>
+			<br>
+			<div class="col s12 m12 l4 xl4 program-panel">
+				<div class="panel-body">
+					<img class="panel-img" src="../../assets/icon/icon_sampah_pahala.png">
+					<h1 class="center p1 b3 subheader">Sampah Pahala</h1>
+					<p class="p3">
+						Memanfaatkan sampah daur ulang dan baju bekas untuk diinvestasikan 
+						dalam bentuk usaha yang diorientasikan pada berbagai kegiatan sosial.</p>
+				</div>
 			</div>
-			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
-				<div id="imgg"><img src="../../assets/koin.png"></div>
-				<h3 class="center" id="prrr">Program<br>
-				Celengan Amal</h3>
-				<p id="textp">Untuk teman-teman yang tidak memiliki sampah botol atau kertas namun sangat ingin berkolaborasi bersama untuk berbagi, bisa menggunakan uang receh sebagai donasi. Seluruh donasi yang teman-teman berikan akan kami investasikan dan keuntungannya akan diorientasikan untuk umat, terkhusus dibidang sosial.</p>
+			<div class="col s12 m12 l4 xl4 program-panel">
+				<div class="panel-body">
+					<img class="panel-img" src="../../assets/icon/koin.png">
+					<h1 class="center p1 b3 subheader">Celengan Amal</h1>
+					<p class="p3">Uang receh sebagai donasi. 
+						Seluruh donasi yang teman-teman berikan akan kami investasikan dan keuntungannya akan 
+						diorientasikan untuk umat, terkhusus di bidang sosial.</p>
+				</div>
 			</div>
-			<div class="col s12 m12 l4 xl4" style="margin-bottom:50px;">
-				<div id="imgg"><img src="../../assets/koin.png"></div>
-				<h3 class="center" id="prrr">Realisasi<br>
-				Program</h3>
-				<p id="textp">Hasil dari donasi semua Sahabat Tanam Pahala akan di realisasikan dalam bentuk kegiatan kemanusiaan diantaranya pembagian takjil saat bulan Ramadhan, buka bersama teman-teman kita yang kurang beruntung, sosialisasi keberbagai sekolah dipedesaan, sumbangan kepada keluarga kita baik dalam lingkup Nasional maupun Internasional.</p>
-			</div>
-			<div class="col s12 m12 l12 xl12">
-				<a class="" href="#"><i class="material-icons" style="color:#004d40; font-size:36px; margin-top:50px">folder_open</i><b id="prr">Dokumentasi Program</b></a>
+			<div class="col s12 m12 l4 xl4 program-panel">
+				<div class="panel-body">
+					<img class="panel-img" src="../../assets/icon/social-care.png">
+					<h1 class="center p1 b3 subheader">Realisasi</h1>
+					<p class="p3">Hasil dari donasi semua Sahabat Tanam Pahala akan di realisasikan dalam 
+						bentuk kegiatan kemanusiaan baik dalam lingkup Nasional maupun Internasional.</p>
+				</div>
 			</div>
 		</div>
-	</div><br>
+	</div>
+	<br>
 	<!-- Content Dokumentasi-->
 
-	<div *ngFor="let dokumentasi of dokumentasis">
-		<!-- Content Dokumentasi 1-->
-		<div class="row" style="margin-bottom:30px;">
-			<div class="container">
-				<div class="col s12 m12 l3 xl3">
-					<img src="{{dokumentasi.img}}" 
-					style="align:left;width:150px;height:150px;border-radius:2%">
-				</div>
-				<div class="col s12 m12 l9 xl9">
-					<h5 id="prrr">{{dokumentasi.judul}}</h5>
-					<p id="textp">{{dokumentasi.deskripsi}}</p>
-				</div>
+	<div class="row" style="margin-bottom:30px;">
+		<div class="container">
+			<div class="col s12 m12 l12 xl12">
+				<h1 class="center h2 b2 sub-judul" href="#"><i class="material-icons">folder_open</i>
+					Dokumentasi Program
+				</h1>
+				
+			</div>
+			<div *ngFor="let post of posts">
+				<!-- Content Dokumentasi 1-->
+				<a class="plain-link" href="/program/{{post.data.slug}}">
+					<div class="col s12 m4 l3 xl3" style="margin-top:20px;">
+						<img src="{{post.img}}" 
+						style="align:left; width:100%; height:120px; border-radius:2%">
+					</div>
+					<div class="col s12 m8 l9 xl9" style="margin-top:20px;">
+						<div class="p2 b1">{{post.data.title}}</div>
+						<p class="p3">{{post.data.excerpt}}</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -53,12 +75,21 @@
 	<!-- Manfaat-->
 	<div class="row">
 		<div class="container">
-			<a class="" href="#"><i class="material-icons" style="margin-top:30px;color:rgb(16, 74, 48); font-size:36px">check_circle</i><b id="prr">Manfaat yang Didapatkan</b></a>
-			<p id="textp">Banyak manfaat yang kita dapatkan jika kita ikut aktif berpartisipasi dalam Program Tanam Pahala diantaranya kita turut melestarikan lingkungan dari sampah yang kita donasikan , menumbuhkan kepekaan sosial, Amal Jariyah, dan mendukung kegiatan sosial. Kegiatan sosial diantaranya mendukung kegiatan buka puasa, berbagi nasi bungkus, membantu pasien yang kurang mampu. Untuk nominal dan kuantitasnya Sahabat Tanam Pahala tidak perlu khawatir, sekecil apapun pemberian dari Sahabat Tanam Pahala pasti akan sangat bermanfaat bagi sesama. Jadi, mari bersama Tanam Pahala mewujudkan masyarakat yang peduli sesama.</p><br>
-			<p class="center" id="khh">TUHAN<br>
-			Sering kali memberesi urusan kita<br>
-			Disaat kita memberesi urusan orang lain</p>
-			<p class="center" id="kh">Dr. KH. Achmad Hasyim Muzadi</p>
+			<h1 class="h2 b2 sub-judul" href="#"><i class="material-icons">check_circle</i>
+				Manfaat yang Didapatkan
+			</h1>
+			<p class="p3">Banyak manfaat yang kita dapatkan jika kita ikut aktif berpartisipasi dalam 
+				Program Tanam Pahala diantaranya kita turut melestarikan lingkungan dari sampah yang 
+				kita donasikan , menumbuhkan kepekaan sosial, Amal Jariyah, dan mendukung kegiatan sosial. 
+				Kegiatan sosial diantaranya mendukung kegiatan buka puasa, berbagi nasi bungkus, 
+				membantu pasien yang kurang mampu. Untuk nominal dan kuantitasnya 
+				Sahabat Tanam Pahala tidak perlu khawatir, sekecil apapun pemberian dari Sahabat 
+				Tanam Pahala pasti akan sangat bermanfaat bagi sesama. Jadi, mari bersama Tanam Pahala 
+				mewujudkan masyarakat yang peduli sesama.</p><br>
+			<p class="center p2 tgreen1">
+			"Tuhan sering kali memberesi urusan kita <br>
+			Disaat kita memberesi urusan orang lain"</p>
+			<p class="center p3 b0">Dr. KH. Achmad Hasyim Muzadi</p>
 		</div>
 	</div><!-- /CONTENT -->
 </body>

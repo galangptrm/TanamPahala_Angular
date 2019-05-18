@@ -5,28 +5,32 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-<<<<<<< HEAD
-import { AnggotaService } from './_service/anggota/anggota.service';
-import { BerandaService } from './_service/beranda/beranda.service';
-=======
-import { AnggotaService } from './anggota.service';
-import { BerandaService } from './beranda.service';
->>>>>>> origin/master
+import { HttpClientModule } from '@angular/common/http';
+
+import { AnggotaService } from './_service/anggota.service';
+import { BerandaService } from './_service/beranda.service';
+import { ProgramService } from './_service/program.service';
+import { NavbarService } from './_service/navbar.service';
+import { ProgramDetailComponent } from './program-detail/program-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    ProgramDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
     AnggotaService, 
-    BerandaService
+    BerandaService,
+    ProgramService,
+    NavbarService
   ],
   bootstrap: [AppComponent]
 })

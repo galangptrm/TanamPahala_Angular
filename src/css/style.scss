@@ -1,0 +1,295 @@
+
+// Small devices (landscape phones, 576px and up)
+$bp-smartphone : 576px;
+// Medium devices (tablets, 768px and up)
+$bp-tablet : 768px;
+// Large devices (desktops, 992px and up)
+$bp-desktop : 992px;
+// Extra large devices (large desktops, 1200px and up)
+$bp-lgdesktop : 1200px;
+
+@mixin bpSmartphone {
+    @media (max-width : #{$bp-smartphone}) {
+        @content;
+    }
+}
+@mixin bpTablet {
+    @media (max-width : #{$bp-tablet}) {
+        @content;
+    }
+}
+@mixin bpDesktop {
+    @media (max-width : #{$bp-desktop}) {
+        @content;
+    }
+}
+@mixin bpLgDesktop {
+    @media (max-width : #{$bp-lgdesktop}) {
+        @content;
+    }
+}
+
+$colors : (
+    GreenLight : #85C33D,
+    GreenDark : #145E3E,
+    Amber : #FEBA00,
+    White : #FFFFFF,
+    Black : #000000,
+    Green1 : rgb(16, 74, 48)
+);
+
+@function color($color-name){
+    @return map-get($colors , $color-name);
+}
+
+//colors
+.amber { background-color: color('Amber');}
+.green1 { background-color: color('GreenDark');}
+
+.tgreen1 { color: color('Green1'); }
+.twhite { color: #FFFFFF; }
+
+// font-sizez
+$h1 : 26pt;
+$h2 : 22pt;
+$p1 : 16pt;
+$p2 : 14pt;
+$p3 : 12pt;
+
+//font-weight
+$b1 : 600;
+$b2 : 400;
+$b3 : 200;
+$b4 : 100;
+$b5 : 50;
+$b6 : 25;
+$b0 : 0;
+$b-1 : -25;
+
+body{
+    font-family:"Ubuntu";
+    padding-top: 0px;
+}
+
+.h1 {font-size: $h1;}
+.h2 {font-size: $h2;}
+.p1 {font-size: $p1;}
+.p2 {font-size: $p2;}
+.p3 {font-size: $p3;}
+
+.b1 {font-weight: $b1;}
+.b2 {font-weight: $b2;}
+.b3 {font-weight: $b3;}
+.b4 {font-weight: $b4;}
+.b5 {font-weight: $b5;}
+.b6 {font-weight: $b6;}
+.b0 {font-weight: $b0;}
+
+#btnOpening{
+    background-color: color('Amber');
+}
+#opening{
+    // font-size:30px;
+    color:white;
+    font-family:"Ubuntu";
+    background-image:url("../assets/website/v2/rrr.png");
+    background-size:cover;
+    padding-bottom:200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subheader{
+    color: WHITE;
+    background-color: color('Green1');
+    padding: 2%;
+}
+.left-aligned {
+    text-align: left;
+}
+
+.program-panel {
+    // border:black;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+#about-image {
+    display: flex;
+    img {
+        align-self: center;
+        margin: auto;
+        width: 50%;
+    }
+}
+#about-image-tentang {
+    display: flex;
+    padding:5%;
+    img {
+        align-self: center;
+        margin: auto;
+        width: 40%;
+    }
+}
+
+.panel-body {
+    padding: 15px;
+    background-color:color('White');
+    border-radius: 20px;
+}
+
+.panel-img {
+    width: 150px;
+    height: 150px;
+}
+
+.sub-judul {
+    font-family: "Ubuntu";
+    color: color('Green1');
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:40px;
+    line-height: 1.1;
+}
+
+#btn-donasi {
+    padding:20px;
+    border-radius:20px;
+    height:100%;
+    color:white;
+}
+
+.btn-wa {
+    color: #000000;
+}
+
+.content-program {
+    background-color: color('GreenLight');
+}
+.content-program .panel {
+    background-color: rgb(249, 249, 249);
+    border-radius: 30px;
+}
+.card-content{
+    line-height: 1.1;
+    font-family: "Ubuntu";
+    text-align: center;
+    background-color: color('Green1');
+    margin-top: 10px;
+    border-radius:2px;
+    margin: 1.14rem 0 .912rem 0;
+    margin-bottom: 10px;
+}
+
+.content-statistik{
+    margin-bottom: 40px;
+}
+.statistik-panel{
+    text-transform: uppercase;
+}
+.statistik-panel a {
+    width: 90%;
+    background-color: rgb(170, 222, 135);
+    font-family: "Ubuntu";
+    color: color('Green1');
+    margin-top: 10%;
+}
+#foot{
+    margin:0px;
+}
+
+#kontenprogram{
+    background:#e8f5e9;
+}
+
+.kartu-profil-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+
+    @include bpTablet() {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+    }
+    @include bpSmartphone() {
+        grid-template-columns: 1fr;
+    }
+}
+
+.kartu-profil {
+    width: 100%; 
+}
+
+#content-mitra{
+    background-color:#e8f5e9;
+    margin-bottom: 0px;
+}
+
+.carousel-img {
+    display: flex;
+    align-content: center;
+
+    img {
+        align-self: center;
+        max-width: 70%;
+        max-height: auto;
+        margin: auto;
+    }
+}
+
+.avatar {
+    filter: grayscale(90%);
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+    max-width:200px;
+    max-height:200px; 
+    border-radius: 10px;
+}
+
+.icon-svg {
+    display: inline-flex;
+    align-content: center;
+    width: 25%;
+    a{
+        margin: auto;
+    }
+}
+
+.footer-copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.post-content {
+    padding-top: 50px;
+    height: 100%;
+}
+
+.artikel-img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-sosmed {
+    display: flex;
+    
+    a {
+        margin: auto;
+    }
+
+    :hover {
+        color: color('GreenLight');
+    }
+}
+
+.plain-link {
+    text-decoration: none;
+    color: #000000;
+
+    :hover {
+        text-shadow: 2px 2px 5px color('GreenLight'); // x-axis y-axis blur-axis color
+        img { 
+            box-shadow: 2px 2px 5px color('GreenLight'); // x-axis y-axis blur-axis color
+        }
+    }
+}

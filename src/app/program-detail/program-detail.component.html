@@ -1,0 +1,60 @@
+<head>
+    <title> {{post_data.data.title}} </title>
+
+    <meta property="og:url"           content="/program/{{post_data.data.slug}}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{post_data.data.title}}" />
+    <meta property="og:description"   content="{{post_data.data.title}}" />
+    <meta property="og:image"         content="{{post_data.img}}" />  
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v3.3"></script>
+  
+  <div class="row">
+    <div class="container">
+      <div class="col s12 m12 l12 xl12">
+        <h1 class="h1 b2"> {{post_data.data.title}} </h1>
+      </div>
+      <div class="col s12 m4 l4 xl4">
+        <p class="p3 b2">{{post_data.data.published_at}}</p>
+      </div>
+      <div class="col s12 m8 l8 xl8">
+        <p class="right p3 b0">{{post_data.data.first_name}} {{post_data.data.last_name}}</p>
+      </div>
+      <div class="col s12 m12 l12 xl12">
+        <!-- <img class="artikel-img" src="../../assets/dokumentasi/ACT - Copy.jpg" alt=""> -->
+        <img class="artikel-img" src="{{post_data.img}}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <div class="col">
+        <div class="artikel-content p2 b-1">
+          {{post_data.data.content}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  
+
+  <div class="row">
+    <div class="center col s12 m12 l12 xl12">
+      <p class="center p3 b0">Share : 
+        
+        <a data-href="http://tanampahala.com" 
+           target="_blank"
+           href="https://www.facebook.com/sharer/sharer.php?u=https://tanampahala.com/program/{{post_data.data.slug}}"
+           data-layout="button" class="tgreen1 fb-share-button" 
+           style="margin-left:5%"><i class="fab small fa-facebook"></i>
+        </a>
+        <a class="tgreen1" style="margin-left:5%" href="instagram.com"><i class="fab small fa-instagram"></i></a> 
+      </p>
+    </div>
+  </div>
+
+</body>
