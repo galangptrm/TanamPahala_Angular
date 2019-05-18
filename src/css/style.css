@@ -295,4 +295,22 @@ body {
 .footer-sosmed a {
   margin: auto;
 }
+
+.footer-sosmed :hover {
+  color: #85C33D;
+}
+
+.plain-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.plain-link :hover {
+  text-shadow: 2px 2px 5px #85C33D;
+}
+
+.plain-link :hover img {
+  -webkit-box-shadow: 2px 2px 5px #85C33D;
+          box-shadow: 2px 2px 5px #85C33D;
+}
 /*# sourceMappingURL=style.css.map */

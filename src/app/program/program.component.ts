@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgramService } from '../_service/program.service';
+import { Router } from '@angular/router';
 // import { forEach } from '@angular/router/src/utils/collection';
 
 declare var $ : any
@@ -16,7 +17,8 @@ export class ProgramComponent implements OnInit {
 
   public posts = []
 
-  constructor( private _programService : ProgramService) { }
+  constructor( private _programService : ProgramService, 
+               private _router : Router) { }
 
   ngOnInit() {
     // this.dokumentasis = this._programService.getDokumentasi();
@@ -25,5 +27,9 @@ export class ProgramComponent implements OnInit {
       console.log(resp);
       this.posts = resp;
     });
+  }
+
+  goToPostDetail(data){
+    this._router.navigate(['/program', data.slug]);
   }
 }

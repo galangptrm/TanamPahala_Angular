@@ -57,14 +57,16 @@
 			</div>
 			<div *ngFor="let post of posts">
 				<!-- Content Dokumentasi 1-->
-				<div class="col s12 m4 l3 xl3" style="margin-top:20px;">
-					<img src="{{post.img}}" 
-					style="align:left; width:100%; height:120px; border-radius:2%">
-				</div>
-				<div class="col s12 m8 l9 xl9" style="margin-top:20px;">
-					<div class="p2 b1">{{post.data.title}}</div>
-					<p class="p3">{{post.data.excerpt}}</p>
-				</div>
+				<a class="plain-link" href="/program/{{post.data.slug}}">
+					<div class="col s12 m4 l3 xl3" style="margin-top:20px;">
+						<img src="{{post.img}}" 
+						style="align:left; width:100%; height:120px; border-radius:2%">
+					</div>
+					<div class="col s12 m8 l9 xl9" style="margin-top:20px;">
+						<div class="p2 b1">{{post.data.title}}</div>
+						<p class="p3">{{post.data.excerpt}}</p>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

@@ -11,11 +11,12 @@ export class ProgramService {
 
   constructor(private http: HttpClient) { }
 
-  private _url_post_list = 'http://cms.tanampahala.com/api/v1/posts';
-  private _url_post_img_prod = 'http://cms.tanampahala.com/api/v1/img/featured';
+  private _url_post_detail = 'http://cms.tanampahala.com/api/v1/post/featured/';
+  private _url_post_list_prod = 'http://cms.tanampahala.com/api/v1/post/featured';
   // private _url_post_list = 'https://jsonplaceholder.typicode.com/posts';
 
-  private _url_post_img = 'http://localhost:6060/TanamPahala/TanamPahala_cms/api/v1/img/featured';
+  private _url_post_list_dev = 'http://localhost:6060/TanamPahala/TanamPahala_cms/api/v1/post/featured';
+  private _url_post_detail_dev = 'http://localhost:6060/TanamPahala/TanamPahala_cms/api/v1/post/featured/';
 
   public getDokumentasi(){
     return [
@@ -26,12 +27,12 @@ export class ProgramService {
     ]
   }
 
-  public getPost(){
-    return this.http.get(this._url_post_list);
+  public getPost(slug){
+    return this.http.get(this._url_post_detail+slug);
   }
 
   public getProgramImg(){
-    return this.http.get(this._url_post_img_prod);
+    return this.http.get(this._url_post_list_prod);
   }
 
   private handleError(error: Response) {

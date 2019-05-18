@@ -64,6 +64,7 @@ $b4 : 100;
 $b5 : 50;
 $b6 : 25;
 $b0 : 0;
+$b-1 : -25;
 
 body{
     font-family:"Ubuntu";
@@ -274,5 +275,21 @@ body{
     
     a {
         margin: auto;
+    }
+
+    :hover {
+        color: color('GreenLight');
+    }
+}
+
+.plain-link {
+    text-decoration: none;
+    color: #000000;
+
+    :hover {
+        text-shadow: 2px 2px 5px color('GreenLight'); // x-axis y-axis blur-axis color
+        img { 
+            box-shadow: 2px 2px 5px color('GreenLight'); // x-axis y-axis blur-axis color
+        }
     }
 }
