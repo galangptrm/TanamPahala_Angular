@@ -138,7 +138,7 @@ export class AnggotaService {
       "ttl" : "Bangkalan, 6 November 1998", 
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
-      "foto" : "../../assets/profil/surabaya/default.jpg", 
+      "foto" : "../../assets/profil/surabaya/farah.png", 
       "ig" : "farahnoviandini", "fb" : "#", "line" : "farahnoviandini" }, 
 
       {"nama" : "Alifah Salsabila", 
@@ -150,11 +150,11 @@ export class AnggotaService {
       "ig" : "alfhsalsa", "fb" : "#", "line" : "alfhsalsa" }, 
 
       {"nama" : "Athariq Dias Muyasar", 
-      "panggilan" : "Athariq", 
+      "panggilan" : "Dias", 
       "ttl" : "Bekasi, 20 Oktober 1999", 
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
-      "foto" : "../../assets/profil/surabaya/default.jpg", 
+      "foto" : "../../assets/profil/surabaya/dias.png", 
       "ig" : "athariqdiasm", "fb" : "#", "line" : "athariqdm" },
 
       {"nama" : "Bunga Mastiti Darmawan", 
@@ -174,11 +174,11 @@ export class AnggotaService {
       "ig" : "fadiaafifhasan", "fb" : "#", "line" : "muhammad04madrid" }, 
 
       {"nama" : "Dzakirotur Rifdah", 
-      "panggilan" : "Dzakirotur", 
+      "panggilan" : "Rifdah", 
       "ttl" : "Surabaya, 5 Juli 1999", 
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
-      "foto" : "../../assets/profil/surabaya/default.jpg", 
+      "foto" : "../../assets/profil/surabaya/rifdah.png", 
       "ig" : "rifdah.dzk", "fb" : "#", "line" : "athariqdias" }
       
     ]
