@@ -6,8 +6,20 @@
   background-color: #145E3E;
 }
 
+.greenlight {
+  background-color: #85C33D;
+}
+
+.tmuted {
+  color: #8f8f8f;
+}
+
 .tgreen1 {
   color: #104a30;
+}
+
+.tgreenlight {
+  color: #85C33D;
 }
 
 .twhite {
@@ -27,6 +39,10 @@ body {
   font-size: 22pt;
 }
 
+.h3 {
+  font-size: 20pt;
+}
+
 .p1 {
   font-size: 16pt;
 }
@@ -37,6 +53,10 @@ body {
 
 .p3 {
   font-size: 12pt;
+}
+
+.p4 {
+  font-size: 8pt;
 }
 
 .b1 {
@@ -74,10 +94,24 @@ body {
 #opening {
   color: white;
   font-family: "Ubuntu";
-  background-image: url("../assets/website/v2/rrr.png");
+  height: 90vh;
+  background-color: rgba(20, 94, 62, 0.7);
+}
+
+#opening::after {
+  content: "";
+  background: url("../assets/dokumentasi/baginasi1-crop.jpg");
   background-size: cover;
-  padding-bottom: 200px;
-  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  height: 90vh;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 
 .subheader {
@@ -106,6 +140,7 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   margin: auto;
+  margin-top: 5%;
   width: 50%;
 }
 
@@ -136,18 +171,10 @@ body {
 
 .sub-judul {
   font-family: "Ubuntu";
-  color: #104a30;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
   line-height: 1.1;
-}
-
-#btn-donasi {
-  padding: 20px;
-  border-radius: 20px;
-  height: 100%;
-  color: white;
 }
 
 .btn-wa {
@@ -166,8 +193,6 @@ body {
 .card-content {
   line-height: 1.1;
   font-family: "Ubuntu";
-  text-align: center;
-  background-color: #104a30;
   margin-top: 10px;
   border-radius: 2px;
   margin: 1.14rem 0 .912rem 0;
@@ -178,16 +203,79 @@ body {
   margin-bottom: 40px;
 }
 
-.statistik-panel {
-  text-transform: uppercase;
+.caption {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
 }
 
-.statistik-panel a {
-  width: 90%;
-  background-color: #aade87;
-  font-family: "Ubuntu";
-  color: #104a30;
-  margin-top: 10%;
+.grayscale {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(20, 94, 62, 0.8)), to(rgba(133, 195, 61, 0.5)));
+  background: linear-gradient(180deg, rgba(20, 94, 62, 0.8) 50%, rgba(133, 195, 61, 0.5));
+}
+
+.caption-img :hover img {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.caption-img :hover .card-overlay {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(20, 94, 62, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(20, 94, 62, 0.8) 20%, rgba(255, 255, 255, 0));
+}
+
+.parallax-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(20, 94, 62, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, rgba(20, 94, 62, 0.8) 10%, rgba(255, 255, 255, 0));
+}
+
+#parallax-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#statistik-panel {
+  text-transform: capitalize;
+}
+
+#statistik-panel .card {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 210px;
+}
+
+#statistik-panel .card-image img {
+  width: 10%;
+  height: auto;
+  margin: 10%;
 }
 
 #foot {
@@ -276,6 +364,10 @@ body {
   padding-bottom: 20px;
 }
 
+#foot {
+  padding-bottom: 0px;
+}
+
 .post-content {
   padding-top: 50px;
   height: 100%;
@@ -298,6 +390,11 @@ body {
 
 .footer-sosmed :hover {
   color: #85C33D;
+}
+
+.footer-sosmed i {
+  width: 50%;
+  height: auto;
 }
 
 .plain-link {

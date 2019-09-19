@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BerandaService } from '../_service/beranda.service';
+import { ProgramService } from '../_service/program.service';
+import { Router } from '@angular/router';
 
 declare var $ : any
 
@@ -18,8 +20,11 @@ export class BodyComponent implements OnInit {
   public galleries = []
   public statistiks = []
   public mitras = []
+  public posts = []
   
-  constructor( private _berandaService : BerandaService ) {
+  constructor( private _berandaService : BerandaService,
+              private _programService : ProgramService,
+              private _router : Router ) {
     
   }
   
@@ -27,6 +32,12 @@ export class BodyComponent implements OnInit {
     this.galleries = this._berandaService.getGallery()
     this.statistiks = this._berandaService.getStatistik()
     this.mitras = this._berandaService.getMitra()
+
+    let get_post = this._programService.getProgramImg();
+    get_post.subscribe((resp : any)=>{
+      console.log(resp);
+      this.posts = resp;
+    });
   }
 
   onClick(value){
@@ -50,6 +61,10 @@ export class BodyComponent implements OnInit {
       preventScrolling:false,
       endingTop:'15%'
   });
+  }
+
+  goToPostDetail(data){
+    this._router.navigate(['/program', data.slug]);
   }
 
 }

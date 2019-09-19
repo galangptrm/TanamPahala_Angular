@@ -27,6 +27,10 @@ export class ProgramComponent implements OnInit {
       console.log(resp);
       this.posts = resp;
     });
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
   }
 
   goToPostDetail(data){

@@ -35,6 +35,7 @@ $colors : (
     Amber : #FEBA00,
     White : #FFFFFF,
     Black : #000000,
+    Muted : #8f8f8f,
     Green1 : rgb(16, 74, 48)
 );
 
@@ -45,16 +46,21 @@ $colors : (
 //colors
 .amber { background-color: color('Amber');}
 .green1 { background-color: color('GreenDark');}
+.greenlight { background-color: color('GreenLight');}
 
+.tmuted { color: color('Muted'); }
 .tgreen1 { color: color('Green1'); }
+.tgreenlight { color: color('GreenLight'); }
 .twhite { color: #FFFFFF; }
 
 // font-sizez
 $h1 : 26pt;
 $h2 : 22pt;
+$h3 : 20pt;
 $p1 : 16pt;
 $p2 : 14pt;
 $p3 : 12pt;
+$p4 : 8pt;
 
 //font-weight
 $b1 : 600;
@@ -73,9 +79,11 @@ body{
 
 .h1 {font-size: $h1;}
 .h2 {font-size: $h2;}
+.h3 {font-size: $h3;}
 .p1 {font-size: $p1;}
 .p2 {font-size: $p2;}
 .p3 {font-size: $p3;}
+.p4 {font-size: $p4;}
 
 .b1 {font-weight: $b1;}
 .b2 {font-weight: $b2;}
@@ -92,10 +100,26 @@ body{
     // font-size:30px;
     color:white;
     font-family:"Ubuntu";
-    background-image:url("../assets/website/v2/rrr.png");
-    background-size:cover;
-    padding-bottom:200px;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-image:url("../assets/dokumentasi/baginasi1-crop.jpg");
+    // background-size:cover;
+    // padding-bottom:200px;
+    height: 90vh;
+    background-color: rgba($color: color('GreenDark'), $alpha: 0.7);
+}
+
+#opening::after{
+    content: "";
+    background: url("../assets/dokumentasi/baginasi1-crop.jpg");
+    background-size: cover; 
+    opacity: 0.5;
+    top: 64px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 90vh;
+    filter: grayscale(1);
 }
 
 .subheader{
@@ -118,6 +142,7 @@ body{
     img {
         align-self: center;
         margin: auto;
+        margin-top: 5%;
         width: 50%;
     }
 }
@@ -144,7 +169,7 @@ body{
 
 .sub-judul {
     font-family: "Ubuntu";
-    color: color('Green1');
+    // color: color('Green1');
     text-align: center;
     margin-top:20px;
     margin-bottom:40px;
@@ -152,10 +177,13 @@ body{
 }
 
 #btn-donasi {
-    padding:20px;
-    border-radius:20px;
-    height:100%;
-    color:white;
+    // border: white solid 5px;
+    // padding:5px;
+    // border-radius:15%;
+    // radius
+    // height:100%;
+    // width: 5%;
+    // color:white;
 }
 
 .btn-wa {
@@ -172,8 +200,8 @@ body{
 .card-content{
     line-height: 1.1;
     font-family: "Ubuntu";
-    text-align: center;
-    background-color: color('Green1');
+    // text-align: center;
+    // background-color: color('Green1');
     margin-top: 10px;
     border-radius:2px;
     margin: 1.14rem 0 .912rem 0;
@@ -183,15 +211,92 @@ body{
 .content-statistik{
     margin-bottom: 40px;
 }
-.statistik-panel{
-    text-transform: uppercase;
+
+.caption {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
+
+.grayscale{
+    filter: grayscale(1);
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, 
+                                rgba($color: color('GreenDark'), $alpha: 0.8) 50%, 
+                                rgba($color: color('GreenLight'), $alpha: 0.5)
+                                );
+}
+
+.caption-img {
+    :hover { 
+        img {
+            filter: none;
+        }
+        .card-overlay {
+            background: linear-gradient(180deg, 
+                                        rgba($color: color('GreenDark'), $alpha: 0.8) 20%, 
+                                        rgba($color: #FFFFFF, $alpha: 0)
+                                        );
+        }
+    }
+}
+
+.parallax-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(90deg, 
+                                rgba($color: color('GreenDark'), $alpha: 0.8) 10%, 
+                                rgba($color: #FFFFFF, $alpha: 0)
+                                );
+}
+
+#parallax-caption {
+    display: flex;
+    align-content: center;
+}
+
+#statistik-panel{
+    text-transform: capitalize;
+}
+
+#statistik-panel .card{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: 210px;
+}
+
+#statistik-panel .card-image img{
+    width: 10%;
+    height: auto;
+    margin: 10%;
+}
+
 .statistik-panel a {
-    width: 90%;
-    background-color: rgb(170, 222, 135);
-    font-family: "Ubuntu";
-    color: color('Green1');
-    margin-top: 10%;
+    // width: 90%;
+    // background-color: rgb(170, 222, 135);
+    // font-family: "Ubuntu";
+    // color: color('Green1');
+    // margin-top: 10%;
 }
 #foot{
     margin:0px;
@@ -259,7 +364,9 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+#foot {
+    padding-bottom: 0px;
+}
 .post-content {
     padding-top: 50px;
     height: 100%;
@@ -279,6 +386,11 @@ body{
 
     :hover {
         color: color('GreenLight');
+    }
+
+    i {
+        width: 50%;
+        height: auto;
     }
 }
 
