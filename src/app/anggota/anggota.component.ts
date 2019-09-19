@@ -9,6 +9,7 @@ import { AnggotaService } from '../_service/anggota.service';
 
 export class AnggotaComponent implements OnInit {
 
+  public anggotaAlls = []
   public anggotaMalangs = []
   public anggotaSemarangs = []
   public anggotaSurabayas = []
@@ -16,6 +17,7 @@ export class AnggotaComponent implements OnInit {
   constructor(private _anggotaService : AnggotaService) { }
 
   ngOnInit() {
+    this.anggotaAlls = this._anggotaService.getAnggotaAll()
     this.anggotaMalangs = this._anggotaService.getAnggotaMalang()
     this.anggotaSemarangs = this._anggotaService.getAnggotaSemarang()
     this.anggotaSurabayas = this._anggotaService.getAnggotaSurabaya()

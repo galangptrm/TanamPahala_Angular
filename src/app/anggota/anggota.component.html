@@ -1,145 +1,42 @@
 <title>Anggota Tanam Pahala</title>
 	<body>
 		<div class="row content-profil">
-			<div class="container">
-				<div>
-					<h1 class="center h2 b2 sub-judul">
-						<i class="material-icons">person_pin</i>
-						Profil Anggota Malang
-					</h1>
-				</div>
-				<div class="kartu-profil-container">
-					<!-- Ng-For -->
-					<div *ngFor="let anggotaMalang of anggotaMalangs">
-						<!-- CARDS-->
-						<div class="center kartu-profil">
-							<div class="card">
-								<img class="avatar" alt="Avatar" src="{{anggotaMalang.foto}}">
+			
+			<div *ngFor="let anggota of anggotaAlls">
+				<div class="col s6 m3 l2 xl2">
+					<div class="card caption-img">
+						<div class="card-image">
+							<div class="caption">
+								<br><br><br><br><br>
 								<div class="container">
-									<h4 class="center p1 b2"><b>{{anggotaMalang.panggilan}}</b></h4>
-									<div>
-										<p class="center p3 b0">
-										{{anggotaMalang.nama}}<br>
-										{{anggotaMalang.ttl}}<br>
-										{{anggotaMalang.domisili}}<br>
-										{{anggotaMalang.jabatan}}<br></p>
+									<p class="twhite b-1" style="margin-bottom:0px">
+										{{anggota.panggilan}}
+									</p>
+									<div class="center twhite">
+										<div class="col s4 m4 l4 xl4">
+											<a href="{{anggota.fb}}" target="_blank">
+												<i class="tiny fab fa-facebook twhite"></i>
+											</a> 
+										</div>
+										<div class="col s4 m4 l4 xl4">
+											<a href="{{anggota.ig}}" target="_blank">
+												<i class="tiny fab fa-instagram twhite"></i>
+											</a> 
+										</div>
+										<div class="col s4 m4 l4 xl4">
+											<a href="{{anggota.line}}" target="_blank">
+												<i class="tiny fab fa-line twhite"></i>
+											</a> 
+										</div>
+												
 									</div>
 								</div>
-								<div class="card-action center">
-									<a href="{{anggotaMalang.fb}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
-
-									<a href="{{anggotaMalang.ig}}" target="_blank">
-										<img class="img-responsive sosmed circle" height="20" 
-										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
-
-									<a href="{{anggotaMalang.line}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-line" src="../../assets/svg/line.jpg"></a>
-								</div>
 							</div>
-						</div><!-- /CARDS-->
-					</div><!--/Ng-For -->
+							<div class="card-overlay card-overlay-anggota"></div>
+							<img class="grayscale" src="{{anggota.foto}}">
+						</div>
+					</div>
 				</div>
-				<!-- /PROFIL -->
-
 			</div>
 		</div>
-		
-		<br><br>
-		<div class="row content-profil">
-			<div class="container">
-				<div>
-					<h1 class="center h2 b2 sub-judul">
-						<i class="material-icons">person_pin</i>
-						Profil Anggota Semarang
-					</h1>
-				</div>
-				<div class="kartu-profil-container">
-					<!-- Ng For -->
-					<div *ngFor="let anggotaSemarang of anggotaSemarangs">
-						<!-- CARDS-->
-						<div class="center kartu-profil">
-							<div class="card">
-								<img class="avatar" alt="Avatar" src="{{anggotaSemarang.foto}}">
-								<div class="container">
-									<h4 class="center p1 b2"><b>{{anggotaSemarang.panggilan}}</b></h4>
-									<div>
-										<p class="center p3 b0">
-										{{anggotaSemarang.nama}}<br>
-										{{anggotaSemarang.ttl}}<br>
-										{{anggotaSemarang.domisili}}<br>
-										{{anggotaSemarang.jabatan}}<br></p>
-									</div>
-								</div>
-								<div class="card-action center">
-									<a href="{{anggotaSemarang.fb}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
-
-									<a href="{{anggotaSemarang.ig}}" target="_blank">
-										<img class="img-responsive sosmed circle" height="20" 
-										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
-
-									<a href="{{anggotaSemarang.line}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-line" src="../../assets/svg/line.jpg"></a>
-								</div>
-							</div>
-						</div><!-- /CARDS-->
-					</div><!--/Ng-For -->
-				</div>
-
-			</div>
-		</div>
-		<br><br>
-		<div class="row content-profil">
-			<div class="container">
-				<div>
-					<h1 class="center h2 b2 sub-judul">
-						<i class="material-icons">person_pin</i>
-						Profil Anggota Surabaya
-					</h1>
-				</div>
-
-				<div class="kartu-profil-container">
-
-				<!-- Ng For -->
-					<div *ngFor="let anggotaSurabaya of anggotaSurabayas">
-						<!-- CARDS-->
-						<div class="center kartu-profil">
-							<div class="card kartu-profil">
-								<img class="avatar" alt="Avatar" src="{{anggotaSurabaya.foto}}">
-								<div class="container">
-									<h4 class="center p1 b2"><b>{{anggotaSurabaya.panggilan}}</b></h4>
-									<div>
-										<p class="center p3 b0">
-										{{anggotaSurabaya.nama}}<br>
-										{{anggotaSurabaya.ttl}}<br>
-										{{anggotaSurabaya.domisili}}<br>
-										{{anggotaSurabaya.jabatan}}<br></p>
-									</div>
-								</div>
-								<div class="card-action center">
-									<a href="{{anggotaSurabaya.fb}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-facebook" src="../../assets/svg/facebook.jpg"></a> 
-
-									<a href="{{anggotaSurabaya.ig}}" target="_blank">
-										<img class="img-responsive sosmed circle" height="20" 
-										id="sosmed-instagram" src="../../assets/svg/instagram.jpg" width="20"></a> 
-
-									<a href="{{anggotaSurabaya.line}}" target="_blank">
-										<img class="img-responsive sosmed circle width=" height="20" 
-										id="sosmed-line" src="../../assets/svg/line.jpg"></a>
-								</div>
-							</div>
-						</div><!-- /CARDS-->
-					</div><!--/Ng-For -->
-				</div>
-
-			</div>
-		</div>
-
 	</body>

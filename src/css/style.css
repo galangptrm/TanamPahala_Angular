@@ -239,6 +239,11 @@ body {
   background: linear-gradient(180deg, rgba(20, 94, 62, 0.8) 20%, rgba(255, 255, 255, 0));
 }
 
+.caption-img :hover .card-overlay-anggota {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0)), to(rgba(20, 94, 62, 0.8)));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(20, 94, 62, 0.8));
+}
+
 .parallax-overlay {
   position: absolute;
   width: 100%;

@@ -250,6 +250,13 @@ body{
                                         rgba($color: #FFFFFF, $alpha: 0)
                                         );
         }
+        
+        .card-overlay-anggota {
+            background: linear-gradient(180deg, 
+                                        rgba($color: #FFFFFF, $alpha: 0) 60%,
+                                        rgba($color: color('GreenDark'), $alpha: 0.8)
+                                        );
+        }
     }
 }
 
