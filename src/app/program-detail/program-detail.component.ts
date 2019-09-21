@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ProgramService } from '../_service/program.service';
 import { ActivatedRoute } from '@angular/router'; 
 
+declare var $ : any
+
 @Component({
   selector: 'app-program-detail',
   templateUrl: './program-detail.component.html',
@@ -22,18 +24,11 @@ export class ProgramDetailComponent implements OnInit {
     get_post.subscribe((resp : any)=>{
       console.log(resp);
       this.post_data = resp;
-      // this.post_content_html = this.escapeHtml(resp.data.content_html);
-      
+    });
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
     });
   }
-
-  // escapeHtml(str1){
-  //   let str2 = str1.replace(/"/gi, "&quout;");
-  //   let str3 = str2.replace(/&/gi, "&amp;");
-  //   let str4 = str3.replace(/</gi, "&lt;");
-  //   let str5 = str4.replace(/>/gi, "&gt;");
-  //   console.log(str5);
-  //   return str5;
-  // }
 
 }

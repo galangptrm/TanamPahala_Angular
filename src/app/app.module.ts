@@ -12,12 +12,18 @@ import { BerandaService } from './_service/beranda.service';
 import { ProgramService } from './_service/program.service';
 import { NavbarService } from './_service/navbar.service';
 import { ProgramDetailComponent } from './program-detail/program-detail.component';
+import { KegiatanComponent } from './kegiatan/kegiatan.component';
+import { MitraComponent } from './mitra/mitra.component';
+import { MitraDetailComponent } from './mitra-detail/mitra-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    ProgramDetailComponent
+    ProgramDetailComponent,
+    KegiatanComponent,
+    MitraComponent,
+    MitraDetailComponent
   ],
   imports: [
     BrowserModule,

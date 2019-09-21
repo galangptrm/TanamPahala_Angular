@@ -87,33 +87,6 @@ body {
   font-weight: 0;
 }
 
-#btnOpening {
-  background-color: #FEBA00;
-}
-
-#opening {
-  color: white;
-  font-family: "Ubuntu";
-  height: 90vh;
-  background-color: rgba(20, 94, 62, 0.7);
-}
-
-#opening::after {
-  content: "";
-  background: url("../assets/dokumentasi/baginasi1-crop.jpg");
-  background-size: cover;
-  opacity: 0.5;
-  top: 64px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  height: 90vh;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-}
-
 .subheader {
   color: WHITE;
   background-color: #104a30;
@@ -201,6 +174,7 @@ body {
 
 .content-statistik {
   margin-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .caption {
@@ -244,6 +218,37 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, rgba(20, 94, 62, 0.8));
 }
 
+.card-kegiatan .card-overlay {
+  opacity: 0;
+}
+
+.card-kegiatan :hover .card-overlay {
+  opacity: 100;
+}
+
+.card-kegiatan :hover .card-icon-view {
+  opacity: 100;
+}
+
+.card-icon-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  z-index: 4;
+}
+
+.card-icon-view i {
+  margin: auto;
+  opacity: 0.5;
+}
+
 .parallax-overlay {
   position: absolute;
   width: 100%;
@@ -256,12 +261,34 @@ body {
   background: linear-gradient(90deg, rgba(20, 94, 62, 0.8) 10%, rgba(255, 255, 255, 0));
 }
 
+.parallax-overlay-opening {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(20, 94, 62, 0.5);
+}
+
 #parallax-caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.avatar-mitra {
+  width: 100%;
+  height: auto;
+  z-index: 3;
+}
+
+.avatar-mitra img {
+  width: 100%;
+  height: auto;
 }
 
 #statistik-panel {
@@ -318,26 +345,20 @@ body {
   width: 100%;
 }
 
-#content-mitra {
-  background-color: #e8f5e9;
-  margin-bottom: 0px;
-}
-
-.carousel-img {
+.card-mitra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  padding: 5px;
 }
 
-.carousel-img img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  max-width: 70%;
-  max-height: auto;
-  margin: auto;
+.card-mitra img {
+  height: 70px;
+  width: auto;
 }
 
 .avatar {
@@ -414,5 +435,18 @@ body {
 .plain-link :hover img {
   -webkit-box-shadow: 2px 2px 5px #85C33D;
           box-shadow: 2px 2px 5px #85C33D;
+}
+
+.link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.artikel-content {
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,9 @@ import { AnggotaComponent } from './anggota/anggota.component';
 import { HeadComponent } from './head/head.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProgramDetailComponent } from './program-detail/program-detail.component';
+import { KegiatanComponent } from './kegiatan/kegiatan.component';
+import { MitraComponent } from './mitra/mitra.component';
+import { MitraDetailComponent } from './mitra-detail/mitra-detail.component';
 
 const routes: Routes = [
   { path : '', redirectTo : '/beranda', pathMatch : 'full' },
@@ -17,7 +20,9 @@ const routes: Routes = [
   { path : 'program', component : ProgramComponent },
   { path : 'program/:slug', component : ProgramDetailComponent },
   { path : 'anggota', component : AnggotaComponent },
-  { path : 'tentang', component : TentangKamiComponent },
+  { path : 'kegiatan', component : KegiatanComponent },
+  { path : 'mitra', component : MitraComponent },
+  { path : 'mitra/:slug', component : MitraDetailComponent },
   { path : "**", component : PageNotFoundComponent }
 ]
 
@@ -35,8 +40,10 @@ export const routingComponents = [
   HeadComponent,
   BodyComponent, 
   ProgramComponent,
+  KegiatanComponent,
   TentangKamiComponent,
   AnggotaComponent,
+  MitraComponent,
   NavigationComponent, 
   FooterComponent,
   PageNotFoundComponent

@@ -21,13 +21,7 @@ export class ProgramComponent implements OnInit {
                private _router : Router) { }
 
   ngOnInit() {
-    // this.dokumentasis = this._programService.getDokumentasi();
-    let get_post = this._programService.getProgramImg();
-    get_post.subscribe((resp : any)=>{
-      console.log(resp);
-      this.posts = resp;
-    });
-
+    
     $(document).ready(function(){
       $('.parallax').parallax();
     });

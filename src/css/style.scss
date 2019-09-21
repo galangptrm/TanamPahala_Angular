@@ -47,6 +47,7 @@ $colors : (
 .amber { background-color: color('Amber');}
 .green1 { background-color: color('GreenDark');}
 .greenlight { background-color: color('GreenLight');}
+.white { background-color: color('White');}
 
 .tmuted { color: color('Muted'); }
 .tgreen1 { color: color('Green1'); }
@@ -92,35 +93,6 @@ body{
 .b5 {font-weight: $b5;}
 .b6 {font-weight: $b6;}
 .b0 {font-weight: $b0;}
-
-#btnOpening{
-    background-color: color('Amber');
-}
-#opening{
-    // font-size:30px;
-    color:white;
-    font-family:"Ubuntu";
-    // background-image:url("../assets/dokumentasi/baginasi1-crop.jpg");
-    // background-size:cover;
-    // padding-bottom:200px;
-    height: 90vh;
-    background-color: rgba($color: color('GreenDark'), $alpha: 0.7);
-}
-
-#opening::after{
-    content: "";
-    background: url("../assets/dokumentasi/baginasi1-crop.jpg");
-    background-size: cover; 
-    opacity: 0.5;
-    top: 64px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    height: 90vh;
-    filter: grayscale(1);
-}
 
 .subheader{
     color: WHITE;
@@ -210,6 +182,7 @@ body{
 
 .content-statistik{
     margin-bottom: 40px;
+    padding-bottom: 30px; 
 }
 
 .caption {
@@ -260,6 +233,39 @@ body{
     }
 }
 
+.card-kegiatan {
+    .card-overlay {
+        opacity: 0;
+    }
+    :hover {
+        .card-overlay { 
+            opacity: 100;
+        }
+        .card-icon-view {
+            opacity: 100;
+        }
+    }
+    .card-content {
+        // padding-top: 0px;
+        // padding-bottom: 10px;
+    }
+}
+
+.card-icon-view {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    z-index: 4;
+
+        i {
+            margin: auto;
+            opacity: 0.5;
+        }
+}
+
 .parallax-overlay {
     position: absolute;
     width: 100%;
@@ -274,9 +280,32 @@ body{
                                 );
 }
 
+.parallax-overlay-opening {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color : rgba($color: color('GreenDark'), $alpha: 0.5);
+}
+
 #parallax-caption {
     display: flex;
     align-content: center;
+}
+
+.avatar-mitra {
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    // padding: 5px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 #statistik-panel{
@@ -331,22 +360,29 @@ body{
     width: 100%; 
 }
 
-#content-mitra{
-    background-color:#e8f5e9;
-    margin-bottom: 0px;
-}
-
-.carousel-img {
+.card-mitra {
     display: flex;
-    align-content: center;
-
+    justify-content: center;
+    height: 80px;
+    padding: 5px;
+    
     img {
-        align-self: center;
-        max-width: 70%;
-        max-height: auto;
-        margin: auto;
+        height: 70px;
+        width: auto;
     }
 }
+
+// .carousel-img {
+//     display: flex;
+//     align-content: center;
+
+//     img {
+//         align-self: center;
+//         max-width: 70%;
+//         max-height: auto;
+//         margin: auto;
+//     }
+// }
 
 .avatar {
     filter: grayscale(90%);
@@ -411,4 +447,16 @@ body{
             box-shadow: 2px 2px 5px color('GreenLight'); // x-axis y-axis blur-axis color
         }
     }
+}
+
+.link-icon {
+    display: flex;
+    justify-content: center;
+    i {
+
+    }
+}
+
+.artikel-content {
+    text-align: justify;
 }

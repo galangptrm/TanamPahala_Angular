@@ -1,0 +1,32 @@
+<title>Kegiatan Tanam Pahala</title>
+
+<body>
+      <div class="row">
+            <div class="col s12 m12 l12 xl12">
+                  <h1 class="h3 b2 sub-judul tgreen1">Kegiatan</h1><br>
+            </div>
+            <div *ngFor="let post of posts">
+                <div class="col s12 m6 l4 xl3">
+                    <div class="card card-kegiatan">
+                        <a href="/program/{{post.data.slug}}">
+                          <div class="card-image">
+                              <div class="card-overlay">
+                                  <div class="card-icon-view"><i class="medium material-icons twhite">remove_red_eye</i></div>
+                              </div>
+                              <img src="{{post.img}}">
+                          </div>
+                        </a>
+                        <a href="/program/{{post.data.slug}}">
+                          <div class="card-content">
+                              <p class="p1 b2 tgreen1">
+                                {{post.data.title}}
+                              </p>
+                              <br>
+                              <p class="p3 b0 tmuted">{{post.date}}</p>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      </div>
+</body>

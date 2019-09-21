@@ -1,86 +1,98 @@
 <!--OPENING-->
-<!-- <input [(ngModel)]="quotes" type="text">
-<input #inputan type="text">
-<button (click)="onClick(inputan.type)" >Log</button> -->
 <title>Beranda Tanam Pahala</title>
 <body>
-	<div id="opening">
-		<h3 class="center h2" style="margin-top:0px"><br>
-		<br>
-		<br>
-		<br>
-		Untukmu Si Pemilik Hati yang Lembut & Tulus<br></h3>
-		<br><br>
-		<p class="center p2" style="margin-top:0px">Semoga Allah meringankan langkah kita untuk selalu berada dalam kebaikan<br>
-		Mari Berkolaborasi!<br>
-		<!-- Modal Trigger --></p>
-		<div class="card-action center" style="padding:8px">
-			<a id="btn-donasi" class="btn btn-large modal-trigger center greenlight p1 b1" data-target="modal1" 
-			(click)="onClick(this.id)"
-			target="_blank">DONASI</a>
-		</div><!-- Modal Trigger -->
-		
-		<p class="center p2">Bersama Tanam Pahala, Membantu Sesama</p><!-- Modal Structure -->
-		<div class="modal green1" id="modal1">
-			<div class="modal-content">
-				<div class="modal-footer" style="background-color:rgba(20, 94, 62, 0.7);">
-					<a class="modal-close waves-effect waves btn-floating amber" style="color:white;"><i class="material-icons">close</i></a>
+	<div class="parallax-container">
+		<div class="parallax">
+			<div class="parallax-overlay-opening"></div>
+			<img class="grayscale" src="../../assets/dokumentasi/baginasi1.jpg">
+		</div>
+		<br><br><br><br>
+		<div class="container center">
+			<div class="row">
+				<div class="col s12 m12 l12 xl12">
+					<p class="h2 b2 sub-judul twhite">
+						Untukmu Si Pemilik Hati yang Lembut & Tulus
+					</p>
+					<p class="twhite">
+						Semoga Allah meringankan langkah kita 
+						untuk selalu berada dalam kebaikan<br>
+						Mari Berkolaborasi!
+					</p>
+					<!-- Modal Trigger -->
+					<div class="center" style="padding:8px">
+						<a id="btn-donasi" class="btn btn-large modal-trigger center greenlight p1 b1" 
+						data-target="modal1" 
+						(click)="onClick(this.id)"
+						target="_blank">DONASI</a>
+					</div>
+					<!-- Modal Trigger -->
+					<p class="twhite">
+						Bersama Tanam Pahala, Membantu Sesama
+					</p>
 				</div>
-				<h1 class="h2 b1 center" style="color:white">Pilih Lokasi</h1><br>
-				<div class="row content">
-					<div class="container">
-						<div class="col s12 m12 l4 xl4">
-							<div class="card-action">
-								<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-								href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0A%20%0ABarakallah%20kepada%20sang%20investor%20pahala%20sebelum%20investasi%20pahala,%20mohon%20diisi%20dulu%20yak.%0A%20%0ANama%3A%20%0AMahasiswa%2FNon%3A%20%0AJenis%20Investasi%20%28koin%2C%20botol%2C%20bekas%2C%20pakaian%20dsb%29%3A%0A%20%0AKuantitas%20%28sedikit%2C%20sedang%2C%20banyak%29%3A%20%0AAntar%2Fjemput%3A%20%0AAlamat%20penjemputan%3A%20%0AWaktu%3A%20%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20%28ya%2Ftidak%29%3F%3A%20%0ACP%3A%0A%20%0ASyukron%20jazakallah%20khair%0A%20%0A*Catatan%20%28Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan%29%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%5Fsmg%0ALine%3A%20@gog3912b" 
-								target="_blank">Semarang</a>
-							</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL -->
+	<div class="modal green1" id="modal1">
+		<div class="modal-content">
+			<div class="modal-footer" style="background-color:rgba(20, 94, 62, 0.7);">
+				<a class="modal-close waves-effect waves btn-floating amber" style="color:white;"><i class="material-icons">close</i></a>
+			</div>
+			<h1 class="h2 b1 center" style="color:white">Pilih Lokasi</h1><br>
+			<div class="row content">
+				<div class="container">
+					<div class="col s12 m12 l4 xl4">
+						<div class="card-action">
+							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
+							href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0A%20%0ABarakallah%20kepada%20sang%20investor%20pahala%20sebelum%20investasi%20pahala,%20mohon%20diisi%20dulu%20yak.%0A%20%0ANama%3A%20%0AMahasiswa%2FNon%3A%20%0AJenis%20Investasi%20%28koin%2C%20botol%2C%20bekas%2C%20pakaian%20dsb%29%3A%0A%20%0AKuantitas%20%28sedikit%2C%20sedang%2C%20banyak%29%3A%20%0AAntar%2Fjemput%3A%20%0AAlamat%20penjemputan%3A%20%0AWaktu%3A%20%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20%28ya%2Ftidak%29%3F%3A%20%0ACP%3A%0A%20%0ASyukron%20jazakallah%20khair%0A%20%0A*Catatan%20%28Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan%29%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%5Fsmg%0ALine%3A%20@gog3912b" 
+							target="_blank">Semarang</a>
 						</div>
-						<div class="col s12 m12 l4 xl4">
-							<div class="card-action">
-								<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-								href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
-								target="_blank">Malang</a>
-							</div>
+					</div>
+					<div class="col s12 m12 l4 xl4">
+						<div class="card-action">
+							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
+							href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+							target="_blank">Malang</a>
 						</div>
-						<div class="col s12 m12 l4 xl4">
-							<div class="card-action">
-								<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-								href="https://api.whatsapp.com/send?phone=6285216894169&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
-								target="_blank">Surabaya</a>
-							</div>
+					</div>
+					<div class="col s12 m12 l4 xl4">
+						<div class="card-action">
+							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
+							href="https://api.whatsapp.com/send?phone=6285216894169&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+							target="_blank">Surabaya</a>
 						</div>
 					</div>
 				</div>
-				<p class="center p3" style="margin-bottom:0px;color:white;">Donasi akan sangat membantu keluarga kita yang membutuhkan</p><br>
 			</div>
+			<p class="center p3" style="margin-bottom:0px;color:white;">Donasi akan sangat membantu keluarga kita yang membutuhkan</p><br>
 		</div>
-	</div><!--OPENING-->
-	<!-- APA ITU TANAM PAHALA -->
-	<div class="row content-tentang">
-		<div class="container">
-			<br><br><br>
-			<div class="col s12 m12 l6 xl6" id="about-image">
-				<img src="../../assets/icon/Logo-Low.png">
+	</div> 
+	<!-- END MODAL-->
+	<br><br><br>
+	<div class="section white">
+		<!-- APA ITU TANAM PAHALA -->
+		<div class="row content-tentang">
+			<div class="container">
+				<br><br><br>
+				<div class="col s12 m12 l6 xl6" id="about-image">
+					<img src="../../assets/icon/Logo-Low.png">
+				</div>
+				<div class="col s12 m12 l6 xl6" id="about-text">
+					<p class="h3 b2 tgreen1">Tentang Kami</p>
+					<p class="p3 b0">Tanam pahala merupakan komunitas yang bergerak 
+									di bidang sosial yang berorientasi pada investasi 
+									produktif bernilai manfaat bagi banyak orang dengan 
+									program utama berupa Celengan Amal dan Sampah Amal</p>
+					<p class="p3 b0">#BersamaMembantuSesama</p>
+				</div>
 			</div>
-			<div class="col s12 m12 l6 xl6" id="about-text">
-				<p class="h3 b2 tgreen1">Tentang Kami</p>
-				<p class="p3 b0">Tanam pahala merupakan komunitas yang bergerak 
-								di bidang sosial yang berorientasi pada investasi 
-								produktif bernilai manfaat bagi banyak orang dengan 
-								program utama berupa Celengan Amal dan Sampah Amal</p>
-				<p class="p3 b0">#BersamaMembantuSesama</p>
-			</div>
-		</div>
-	</div><!-- /APA ITU TANAM PAHALA -->
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+		</div><!-- /APA ITU TANAM PAHALA -->
+	</div>
+	<br><br><br><br>
 	<!-- JENIS DONASI -->
-	<div class="row content-donasi greenlight">
+	<div class="row content-donasi">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 l12 xl12">
@@ -124,7 +136,7 @@
 	<!-- STATISTIK -->
 	<br>
 	<br>
-	<div class="row content-statistik">
+	<div class="row content-statistik greenlight">
 		<div class="container">
 			<div class="col s12 m12 l12 xl12" id="statistik-title">
 				<p class="h3 b2 sub-judul tgreen1">Statistik</p><br>
@@ -133,28 +145,24 @@
 			<div *ngFor="let statistik of statistiks" id="statistik-panel">
 				<div class="col s12 m6 l3">
 					<div class="card center">
-
-							<img src="{{statistik.img}}">
-						
+						<img src="{{statistik.img}}">
 						<p class="center p3 b0 tgreen1">{{statistik.judul}}</p>
 						<span class="center p2 b4 tgreen1">{{statistik.jumlah}}</span>&nbsp;<span class="p2 b4 tgreenlight">{{statistik.keterangan}}</span>
 					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div><!-- /STATISTIK -->
-	<br>
-	<br>
+	<br><br><br>
 	<!-- KEGIATAN KAMI -->
 	<div style="padding-bottom:10px">
 		<div class="row">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<div class="col s12 m12 l12 xl12" id="mitra-title">
 					<h1 class="h3 b2 sub-judul tgreen1">Kegiatan</h1><br>
 				</div>
 				<div  *ngFor="let post of posts">
-					<div class="col s12 m6 l4 xl4">
+					<div class="col s12 m6 l3 xl3">
 						<div class="card">
 							<div class="card-image">
 								<img src="{{post.img}}">
@@ -170,41 +178,29 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div  *ngFor="let gallery of galleries">
-					<div class="col s12 m4 l4 xl4">
-						<div materialize="materialboxed" class="card materialboxed">
-							<div class="card-image">
-								<img src="{{gallery.img}}">
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- end ngFor -->
-				
-			</div>
+			<!-- </div> -->
 		</div>
 	</div><!-- KEGIATAN KAMI -->
 	<br>
 	<br>
 	<br>
-	<!--TES<div class="panel panel-default hoverable">-->
 	 <!-- MITRA -->
 	 <br>
-	<div class="row" id="content-mitra">
+	<div class="row">
 		<div class="container">
-			<div class="col s12 m12 l12 xl16">
+			<div class="col s12 m12 l12 xl12">
 				<h1 class="h3 b2 sub-judul tgreen1" style="margin-bottom :0px;">Mitra</h1>
 			</div>
-
-			<div class="carousel">
-				<div *ngFor="let mitra of mitras">
-					<div class="col s12 m4 l4 xl4">
-						<a class="carousel-item carousel-img" href="{{mitra.url}}" target="_blank">
-							<img src="{{mitra.img}}">
-						</a> 
+		</div>
+	</div>
+	<div class="row">
+		<div *ngFor="let mitra of mitras">
+			<div class="col s4 m2 l2 xl2">
+				<a class="link-mitra" href="{{mitra.url}}" target="_blank">
+					<div class="card center card-mitra">
+						<img class="" width="100" src="{{mitra.img}}">
 					</div>
-				</div>
-
+				</a>
 			</div>
 		</div>
 	</div>

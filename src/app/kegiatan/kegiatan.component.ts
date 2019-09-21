@@ -6,36 +6,28 @@ import { Router } from '@angular/router';
 declare var $ : any
 
 @Component({
-  selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+  selector: 'app-kegiatan',
+  templateUrl: './kegiatan.component.html',
+  styleUrls: ['./kegiatan.component.css']
 })
-
-export class BodyComponent implements OnInit {
+export class KegiatanComponent implements OnInit {
 
   quotes : string
 
-  public displayable = true
-
-  public galleries = []
-  public statistiks = []
-  public mitras = []
   public posts = []
   
-  constructor( private _berandaService : BerandaService,
+  constructor( 
               private _programService : ProgramService,
               private _router : Router ) {
     
   }
   
   ngOnInit() {
-    this.galleries = this._berandaService.getGallery()
-    this.statistiks = this._berandaService.getStatistik()
-    this.mitras = this._berandaService.getMitra()
 
-    let get_post = this._programService.getProgramImg(4);
+    let get_post = this._programService.getProgramImg(10);
     get_post.subscribe((resp : any)=>{
       console.log(resp);
+      
       this.posts = resp;
     });
 
@@ -53,18 +45,7 @@ export class BodyComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    // $('.materialboxed').materialbox();
-    $('.carousel').carousel({
-      padding:100,
-			dist:0,
-			indicators:true,
-    });
-    $('.modal').modal({
-      opacity:0.8,
-      dismissible:false,
-      preventScrolling:false,
-      endingTop:'15%'
-  });
+
   }
 
   goToPostDetail(data){
