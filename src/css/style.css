@@ -10,11 +10,19 @@
   background-color: #85C33D;
 }
 
+.tamber {
+  color: #FEBA00;
+}
+
 .tmuted {
   color: #8f8f8f;
 }
 
 .tgreen1 {
+  color: #104a30;
+}
+
+.tgreen1 i {
   color: #104a30;
 }
 
@@ -97,6 +105,10 @@ body {
   text-align: left;
 }
 
+.margin-top-null {
+  margin-top: 0px;
+}
+
 .program-panel {
   text-align: center;
   margin-bottom: 20px;
@@ -150,10 +162,6 @@ body {
   line-height: 1.1;
 }
 
-.btn-wa {
-  color: #000000;
-}
-
 .content-program {
   background-color: #85C33D;
 }
@@ -199,8 +207,8 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(20, 94, 62, 0.8)), to(rgba(133, 195, 61, 0.5)));
-  background: linear-gradient(180deg, rgba(20, 94, 62, 0.8) 50%, rgba(133, 195, 61, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(20, 94, 62, 0.9)), to(rgba(133, 195, 61, 0.5)));
+  background: linear-gradient(180deg, rgba(20, 94, 62, 0.9) 50%, rgba(133, 195, 61, 0.5));
 }
 
 .caption-img :hover img {
@@ -209,8 +217,8 @@ body {
 }
 
 .caption-img :hover .card-overlay {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(20, 94, 62, 0.8)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, rgba(20, 94, 62, 0.8) 20%, rgba(255, 255, 255, 0));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(20, 94, 62, 0.7)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, rgba(20, 94, 62, 0.7) 20%, rgba(255, 255, 255, 0));
 }
 
 .caption-img :hover .card-overlay-anggota {
@@ -249,6 +257,11 @@ body {
   opacity: 0.5;
 }
 
+.parallax-container-header {
+  height: auto;
+  position: relative;
+}
+
 .parallax-overlay {
   position: absolute;
   width: 100%;
@@ -257,8 +270,7 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(20, 94, 62, 0.8)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, rgba(20, 94, 62, 0.8) 10%, rgba(255, 255, 255, 0));
+  background: rgba(16, 74, 48, 0.7);
 }
 
 .parallax-overlay-opening {
@@ -269,7 +281,7 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: rgba(20, 94, 62, 0.5);
+  background-color: rgba(20, 94, 62, 0.7);
 }
 
 #parallax-caption {
@@ -361,6 +373,20 @@ body {
   width: auto;
 }
 
+@media (max-width: 576px) {
+  .card-mitra img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-mitra img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .avatar {
   -webkit-filter: grayscale(90%);
           filter: grayscale(90%);
@@ -437,13 +463,9 @@ body {
           box-shadow: 2px 2px 5px #85C33D;
 }
 
-.link-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.btn-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .artikel-content {

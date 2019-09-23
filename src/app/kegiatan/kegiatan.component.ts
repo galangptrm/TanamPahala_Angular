@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BerandaService } from '../_service/beranda.service';
 import { ProgramService } from '../_service/program.service';
 import { Router } from '@angular/router';
 

@@ -44,9 +44,9 @@ export class BodyComponent implements OnInit {
     });
   }
 
-  onClick(value){
-    this.quotes = value
-  }
+  // onClick(value){
+  //   this.quotes = value
+  // }
 
   onClick_gallery(value){
 

@@ -1,33 +1,41 @@
 <!--OPENING-->
 <title>Beranda Tanam Pahala</title>
 <body>
-	<div class="parallax-container">
+	<div class="parallax-container parallax-container-header">
 		<div class="parallax">
 			<div class="parallax-overlay-opening"></div>
 			<img class="grayscale" src="../../assets/dokumentasi/baginasi1.jpg">
 		</div>
-		<br><br><br><br>
+		<br><br>
 		<div class="container center">
 			<div class="row">
 				<div class="col s12 m12 l12 xl12">
 					<p class="h2 b2 sub-judul twhite">
 						Untukmu Si Pemilik Hati yang Lembut & Tulus
 					</p>
-					<p class="twhite">
-						Semoga Allah meringankan langkah kita 
-						untuk selalu berada dalam kebaikan<br>
-						Mari Berkolaborasi!
+					<p class="p1 twhite">
+						Bersama Tanam Pahala, mari donasikan sebagian rezeki <br>
+						untuk membantu saudara-saudara kita yang membutuhkan. <br>
+						Donasi anda dapat berupa <b class="tgreenlight">Sampah Daur Ulang</b> maupun <b class="tamber">Koin Receh</b>.
 					</p>
+				</div>
+				<div class="col s12 m12 l12 xl12">
 					<!-- Modal Trigger -->
-					<div class="center" style="padding:8px">
-						<a id="btn-donasi" class="btn btn-large modal-trigger center greenlight p1 b1" 
-						data-target="modal1" 
-						(click)="onClick(this.id)"
-						target="_blank">DONASI</a>
-					</div>
+					<a class="btn-large btn-margin greenlight twhite modal-trigger center" 
+						data-target="modal-sampah">
+						<i class="fas small fa-recycle left"></i> Donasikan Sampah
+					</a>
+				</div>
+				<div class="col s12 m12 l12 xl12">
 					<!-- Modal Trigger -->
-					<p class="twhite">
-						Bersama Tanam Pahala, Membantu Sesama
+					<a class="btn-large btn-margin amber twhite modal-trigger center" 
+						data-target="modal-koin">
+						<i class="fas small fa-coins left"></i> Donasikan Koin
+					</a>
+				</div>
+				<div class="col s12 m12 l12 xl12">
+					<p class="p1 twhite">
+						#Bersama<b class="tamber">Membantu</b>Sesama
 					</p>
 				</div>
 			</div>
@@ -35,41 +43,99 @@
 	</div>
 
 	<!-- MODAL -->
-	<div class="modal green1" id="modal1">
+	<div class="modal greenlight" id="modal-sampah">
 		<div class="modal-content">
-			<div class="modal-footer" style="background-color:rgba(20, 94, 62, 0.7);">
-				<a class="modal-close waves-effect waves btn-floating amber" style="color:white;"><i class="material-icons">close</i></a>
+			<a class="modal-close waves-effect waves btn-floating right">
+				<i class="material-icons tgreen1">close</i>
+			</a>
+			<p class="p1 b3 center tgreen1">
+				Donasi sampah anda akan kami jemput ke lokasi. 
+				Kami menerima donasi berupa botol plastik, kertas bekas, kardus bekas & pakaian layak pakai.
+			</p>
+			<p class=" center tgreen1">Silahkan menghubungi tim kami dari salah satu kota yang telah kami jangkau</p>
+			<div class="row">
+				<!-- <div class="container"> -->
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Malang</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Semarang</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0A%20%0ABarakallah%20kepada%20sang%20investor%20pahala%20sebelum%20investasi%20pahala,%20mohon%20diisi%20dulu%20yak.%0A%20%0ANama%3A%20%0AMahasiswa%2FNon%3A%20%0AJenis%20Investasi%20%28koin%2C%20botol%2C%20bekas%2C%20pakaian%20dsb%29%3A%0A%20%0AKuantitas%20%28sedikit%2C%20sedang%2C%20banyak%29%3A%20%0AAntar%2Fjemput%3A%20%0AAlamat%20penjemputan%3A%20%0AWaktu%3A%20%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20%28ya%2Ftidak%29%3F%3A%20%0ACP%3A%0A%20%0ASyukron%20jazakallah%20khair%0A%20%0A*Catatan%20%28Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan%29%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%5Fsmg%0ALine%3A%20@gog3912b" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Surabaya</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=6285216894169&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+				<!-- </div> -->
 			</div>
-			<h1 class="h2 b1 center" style="color:white">Pilih Lokasi</h1><br>
-			<div class="row content">
-				<div class="container">
-					<div class="col s12 m12 l4 xl4">
-						<div class="card-action">
-							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-							href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0A%20%0ABarakallah%20kepada%20sang%20investor%20pahala%20sebelum%20investasi%20pahala,%20mohon%20diisi%20dulu%20yak.%0A%20%0ANama%3A%20%0AMahasiswa%2FNon%3A%20%0AJenis%20Investasi%20%28koin%2C%20botol%2C%20bekas%2C%20pakaian%20dsb%29%3A%0A%20%0AKuantitas%20%28sedikit%2C%20sedang%2C%20banyak%29%3A%20%0AAntar%2Fjemput%3A%20%0AAlamat%20penjemputan%3A%20%0AWaktu%3A%20%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20%28ya%2Ftidak%29%3F%3A%20%0ACP%3A%0A%20%0ASyukron%20jazakallah%20khair%0A%20%0A*Catatan%20%28Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan%29%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%5Fsmg%0ALine%3A%20@gog3912b" 
-							target="_blank">Semarang</a>
-						</div>
-					</div>
-					<div class="col s12 m12 l4 xl4">
-						<div class="card-action">
-							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-							href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
-							target="_blank">Malang</a>
-						</div>
-					</div>
-					<div class="col s12 m12 l4 xl4">
-						<div class="card-action">
-							<a class="waves-effect waves btn-large amber btn-wa p3 b2" 
-							href="https://api.whatsapp.com/send?phone=6285216894169&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
-							target="_blank">Surabaya</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<p class="center p3" style="margin-bottom:0px;color:white;">Donasi akan sangat membantu keluarga kita yang membutuhkan</p><br>
 		</div>
 	</div> 
 	<!-- END MODAL-->
+
+	<!-- MODAL -->
+	<div class="modal amber" id="modal-koin">
+		<div class="modal-content">
+			<a class="modal-close waves-effect waves btn-floating right">
+				<i class="material-icons tgreen1">close</i>
+			</a>
+			<p class="p1 b3 center tgreen1">
+				Donasi koin receh anda akan kami jemput ke lokasi. 
+				Kami menerima donasi koin rupiah pecahan berapapun.
+			</p>
+			<p class=" center tgreen1">Silahkan menghubungi tim kami dari salah satu kota yang telah kami jangkau</p>
+			<div class="row">
+				<!-- <div class="container"> -->
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Malang</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=6285954615788&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Semarang</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=628815600345&text=Assalamu'alaikum%20Warohmatullahi%20Wabarokatuh%0A%20%0ABarakallah%20kepada%20sang%20investor%20pahala%20sebelum%20investasi%20pahala,%20mohon%20diisi%20dulu%20yak.%0A%20%0ANama%3A%20%0AMahasiswa%2FNon%3A%20%0AJenis%20Investasi%20%28koin%2C%20botol%2C%20bekas%2C%20pakaian%20dsb%29%3A%0A%20%0AKuantitas%20%28sedikit%2C%20sedang%2C%20banyak%29%3A%20%0AAntar%2Fjemput%3A%20%0AAlamat%20penjemputan%3A%20%0AWaktu%3A%20%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20%28ya%2Ftidak%29%3F%3A%20%0ACP%3A%0A%20%0ASyukron%20jazakallah%20khair%0A%20%0A*Catatan%20%28Tulis%20dibawah%20jika%20ada%20yang%20ingin%20ditanyakan%29%0A%20%0A#BersamaMembantuSesama%0APantau%20terus%20sosial%20media%20kami%20di%0AIg%3A%20tanampahala%5Fsmg%0ALine%3A%20@gog3912b" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+
+					<div class="col s12 m12 l4 xl4 center">
+						<div class="card-panel white">
+							<p class="center tgreen1 p1 b1 margin-top-null">Surabaya</p>
+							<a class="btn greenlight" 
+								href="https://api.whatsapp.com/send?phone=6285216894169&text=Assalamualaikum%20warahmatullah%20wabarakatuh%0A%0ABarakallah%20kepada%20sang%20investor%20pahala%20%3A)%20sebelum%20investasi%20pahala%2C%20mohon%20diisi%20dulu%20yak%0A%0ANama%20%3A%0AMahasiswa%2FNon%3A%0AJenis%20investasi%20(%20koin%2C%20botol%20bekas%2C%20pakaian%2C%20dsb)%3A%0AKuantitas%20(sedikit%2C%20sedang%2C%20banyak)%3A%20%0AAntar%20%2F%20jemput%3A%0AAlamat%20penjemputan%3A%0AWaktu%20%3A%0AApakah%20berkenan%20untuk%20didokumentasi%20foto%20(ya%2Ftdk)%3F%3A%0ACP%20%3A%20%0A%0ASyukron%20jazakallah%20khair%20%F0%9F%99%8F" 
+								target="_blank"><i class="fab fa-whatsapp left"></i>Whatsapp
+							</a>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div> 
+	<!-- END MODAL-->
+
 	<br><br><br>
 	<div class="section white">
 		<!-- APA ITU TANAM PAHALA -->
@@ -81,11 +147,11 @@
 				</div>
 				<div class="col s12 m12 l6 xl6" id="about-text">
 					<p class="h3 b2 tgreen1">Tentang Kami</p>
-					<p class="p3 b0">Tanam pahala merupakan komunitas yang bergerak 
-									di bidang sosial yang berorientasi pada investasi 
-									produktif bernilai manfaat bagi banyak orang dengan 
-									program utama berupa Celengan Amal dan Sampah Amal</p>
-					<p class="p3 b0">#BersamaMembantuSesama</p>
+					<p class="p3 b0">Tanam pahala merupakan komunitas sosial yang memanfaatkan 
+									donasi berupa sampah daur ulang & uang koin untuk diinvestasikan
+									kepada para pedangan kecil dan disalurkan ke berbagai kegiatan sosial.
+								</p>
+					<p class="tmuted p3 b0">#BersamaMembantuSesama</p>
 				</div>
 			</div>
 		</div><!-- /APA ITU TANAM PAHALA -->
@@ -139,7 +205,8 @@
 	<div class="row content-statistik greenlight">
 		<div class="container">
 			<div class="col s12 m12 l12 xl12" id="statistik-title">
-				<p class="h3 b2 sub-judul tgreen1">Statistik</p><br>
+				<p class="h3 b2 sub-judul tgreen1">Statistik <br>
+					<small class="p3 b0"> <i>Update</i> : September 2019</small></p>
 			</div>
 
 			<div *ngFor="let statistik of statistiks" id="statistik-panel">
@@ -165,12 +232,12 @@
 					<div class="col s12 m6 l3 xl3">
 						<div class="card">
 							<div class="card-image">
-								<img src="{{post.img}}">
+								<img src="{{post.img}}" onError="this.src='../../assets/website/dummy-169.jpg'">
 							</div>
 							<div class="card-content">
 								<p class="p3 b0">{{post.data.title}}</p>
 								<br>
-								<p class="tmuted b-1">{{post.data.excerpt}}</p>
+								<p class="tmuted b-1">{{ post.data.excerpt.substr(0, 100) }}...</p>
 							</div>
 							<div class="card-action">
 								<a class="btn btn-xs greenlight" href="/program/{{post.data.slug}}">Selengkapnya</a>

@@ -10,9 +10,9 @@ export class BerandaService {
 public getStatistik() {
   return [
     {"img":"../../assets/icon/donasi.png", "judul" : "Jumlah Donatur", "jumlah" : "37", "keterangan" : "Orang"},
-    {"img":"../../assets/icon/bin.png", "judul" : "Sampah Tersisa", "jumlah" : "5", "keterangan" : "Kilogram"},
-    {"img":"../../assets/icon/handshake.png", "judul" : "Penerima Bantuan", "jumlah" : "409", "keterangan" : "Pihak"},
-    {"img":"../../assets/icon/report.png", "judul" : "Sampah Terkumpul", "jumlah" : "302", "keterangan" : "Kilogram"},
+    {"img":"../../assets/icon/bin.png", "judul" : "Sampah Terkumpul", "jumlah" : "50", "keterangan" : "Kg"},
+    {"img":"../../assets/icon/koin-crop.png", "judul" : "Koin Terkumpul", "jumlah" : "Rp.100,000", "keterangan" : ""},
+    {"img":"../../assets/icon/handshake.png", "judul" : "Penerima Bantuan", "jumlah" : "409", "keterangan" : "Pihak"}
   ]
 }
 
@@ -32,13 +32,19 @@ public getGallery(){
 
 public getMitra(){
   return [
-    {"img" : "../../assets/mitra/ragambingkai.png", "url" : "#"},
-    {"img" : "../../assets/mitra/act.png", "url" : "http://act.id"},
-    {"img" : "../../assets/mitra/harfaa.png", "url" : "#"},
-    {"img" : "../../assets/mitra/creatingcatering.png", "url" : "#"},
-    {"img" : "../../assets/mitra/oemahku.png", "url" : "#"},
-    {"img" : "../../assets/mitra/maklum.png", "url" : "#"},
-    {"img" : "../../assets/mitra/anekajajanan.png", "url" : "#"}
+    {"img" : "../../assets/mitra/act/act.png", "url" : "/mitra/aksi-cepat-tanggap"},
+    {"img" : "../../assets/mitra/harfaa/harfaa.png", "url" : "/mitra/harapan-dhuafa"},
+    {"img" : "../../assets/mitra/sahabatanakkankermalang/logo.jpg", "url" : "/mitra/yayasan-sahabat-anak-kanker-malang"},
+    {"img" : "../../assets/mitra/malangcatsurvival/logo.jpg", "url" : "/mitra/malang-cat-survival"},
+    {"img" : "../../assets/mitra/malangpotrait/logo.jpg", "url" : "/mitra/malang-potrait"},
+    {"img" : "../../assets/mitra/sendalbunda/logo.jpg", "url" : "/mitra/sendal-bunda"},
+    {"img" : "../../assets/mitra/pojokprinting/logo.jpg", "url" : "/mitra/pojok-printing"},
+    {"img" : "../../assets/mitra/geraiwika/logo.jpg", "url" : "/mitra/geraiwika"},
+    {"img" : "../../assets/mitra/bantencatering/logo.png", "url" : "/mitra/banten-catering"},
+    {"img" : "../../assets/mitra/ragambingkai/ragambingkai.png", "url" : "/mitra/ragam-bingkai"},
+    {"img" : "../../assets/mitra/maklum/logo.png", "url" : "/mitra/martabak-lumpia-malang"},
+    {"img" : "../../assets/mitra/sumochi/logo.jpg", "url" : "/mitra/kedai-sumochi"},
+    {"img" : "../../assets/mitra/fardiazcatering/logo.png", "url" : "/mitra/fardiaz-catering"}
   ]
 }
 

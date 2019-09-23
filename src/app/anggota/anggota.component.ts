@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AnggotaService } from '../_service/anggota.service';
 
+declare var $ : any;
+
 @Component({
   selector: 'app-anggota',
   templateUrl: './anggota.component.html',
@@ -21,6 +23,10 @@ export class AnggotaComponent implements OnInit {
     this.anggotaMalangs = this._anggotaService.getAnggotaMalang()
     this.anggotaSemarangs = this._anggotaService.getAnggotaSemarang()
     this.anggotaSurabayas = this._anggotaService.getAnggotaSurabaya()
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
   }
 
 }
