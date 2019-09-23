@@ -9,10 +9,10 @@ export class BerandaService {
 
 public getStatistik() {
   return [
-    {"img":"../../assets/icon/donasi.png", "judul" : "Jumlah Donatur", "jumlah" : "37", "keterangan" : "Orang"},
-    {"img":"../../assets/icon/bin.png", "judul" : "Sampah Terkumpul", "jumlah" : "50", "keterangan" : "Kg"},
-    {"img":"../../assets/icon/koin-crop.png", "judul" : "Koin Terkumpul", "jumlah" : "Rp.100,000", "keterangan" : ""},
-    {"img":"../../assets/icon/handshake.png", "judul" : "Penerima Bantuan", "jumlah" : "409", "keterangan" : "Pihak"}
+    {"img":"../../assets/website/v2/ggift.png", "judul" : "Jumlah Donatur", "jumlah" : "37", "keterangan" : "Orang"},
+    {"img":"../../assets/website/v2/gtrash.png", "judul" : "Sampah Terkumpul", "jumlah" : "50", "keterangan" : "Kg"},
+    {"img":"../../assets/website/v2/gcoin.png", "judul" : "Koin Terkumpul", "jumlah" : "Rp.100,000", "keterangan" : ""},
+    {"img":"../../assets/website/v2/ghandshake.png", "judul" : "Penerima Bantuan", "jumlah" : "409", "keterangan" : "Pihak"}
   ]
 }
 

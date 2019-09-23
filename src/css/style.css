@@ -468,6 +468,12 @@ body {
   margin-bottom: 10px;
 }
 
+.dismiss-modal {
+  position: absolute;
+  top: 10;
+  right: 10;
+}
+
 .artikel-content {
   text-align: justify;
 }
