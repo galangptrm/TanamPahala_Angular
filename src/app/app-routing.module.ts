@@ -18,11 +18,11 @@ const routes: Routes = [
   { path : '', redirectTo : '/beranda', pathMatch : 'full' },
   { path : 'beranda' , component : BodyComponent},
   { path : 'program', component : ProgramComponent },
-  { path : 'program/:slug', component : ProgramDetailComponent },
+  { path : 'program:slug', component : ProgramDetailComponent },
   { path : 'anggota', component : AnggotaComponent },
   { path : 'kegiatan', component : KegiatanComponent },
   { path : 'mitra', component : MitraComponent },
-  { path : 'mitra/:slug', component : MitraDetailComponent },
+  { path : 'mitra:slug', component : MitraDetailComponent },
   { path : "**", component : PageNotFoundComponent }
 ]
 

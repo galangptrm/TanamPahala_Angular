@@ -16,7 +16,7 @@ export class AnggotaService {
       "jabatan" : "Leader Tanam Pahala", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mas rizky.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Shulhan Darajat", 
       "panggilan" : "Shulhan", 
@@ -24,7 +24,7 @@ export class AnggotaService {
       "jabatan" : "Leader Celengan Amal", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/massulhan.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Galang Putratama", 
       "panggilan" : "Galang", 
@@ -32,7 +32,7 @@ export class AnggotaService {
       "jabatan" : "Web Developer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/masgalang.jpg", 
-      "ig" : "sasdfsdf", "fb" : "sdfdsf", "line" : "sdfsdfsdf" },
+      "ig" : "galangptrm", "fb" : false, "line" : false },
 
       {"nama" : "Rifaldi Raya", 
       "panggilan" : "Rifal", 
@@ -40,7 +40,7 @@ export class AnggotaService {
       "jabatan" : "Web Developer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/Rifal.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Moh Imam Rosyidi", 
       "panggilan" : "Rosyidi", 
@@ -48,7 +48,7 @@ export class AnggotaService {
       "jabatan" : "Designer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/rosi.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Khoirul Badriyah", 
       "panggilan" : "Khobar", 
@@ -56,7 +56,7 @@ export class AnggotaService {
       "jabatan" : "Social Media Admin", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mbak Khobar.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Nandika Sekar Guamaharani", 
       "panggilan" : "Nandika", 
@@ -64,14 +64,14 @@ export class AnggotaService {
       "jabatan" : "Treasurer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mbakNandika.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" },
+      "ig" : false, "fb" : false, "line" : false },
       {"nama" : "Trianto", 
       "panggilan" : "Trianto", 
       "ttl" : "Cilacap, 26 Juni 1997", 
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26267.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Siti Rohmaniah", 
       "panggilan" : "Rohmaniah", 
@@ -79,7 +79,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26268.jpg",
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Febryan Taufiq", 
       "panggilan" : "Febry",
@@ -87,7 +87,7 @@ export class AnggotaService {
        "jabatan" : "Member", 
        "domisili" : "Semarang" , 
        "foto" : "../../assets/profil/semarang/26266.jpg", 
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Mochammad Iffan Zulfiandri",
        "panggilan" : "Iffan", 
@@ -95,7 +95,7 @@ export class AnggotaService {
        "jabatan" : "Member",
        "domisili" : "Semarang" , 
        "foto" : "../../assets/profil/semarang/1.jpg", 
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Dewi Anggraini", 
       "panggilan" : "Dewi", 
@@ -103,7 +103,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/kartun.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Muhammad Kautsar Aqsa", 
       "panggilan" : "Aqsa", 
@@ -111,7 +111,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26264.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Alifia Hanifah Mumtaz", 
       "panggilan" : "Alifia", 
@@ -119,7 +119,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26265.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" },
+      "ig" : false, "fb" : false, "line" : false },
 
       {"nama" : "Farah Noviandini", 
       "panggilan" : "Farah", 
@@ -127,7 +127,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/farah.png", 
-      "ig" : "farahnoviandini", "fb" : "#", "line" : "farahnoviandini" }, 
+      "ig" : "farahnoviandini", "fb" : false, "line" : "farahnoviandini" }, 
 
       {"nama" : "Alifah Salsabila", 
       "panggilan" : "Alifah", 
@@ -135,7 +135,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "alfhsalsa", "fb" : "#", "line" : "alfhsalsa" }, 
+      "ig" : "alfhsalsa", "fb" : false, "line" : "alfhsalsa" }, 
 
       {"nama" : "Athariq Dias Muyasar", 
       "panggilan" : "Dias", 
@@ -143,7 +143,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/dias.png", 
-      "ig" : "athariqdiasm", "fb" : "#", "line" : "athariqdm" },
+      "ig" : "athariqdiasm", "fb" : false, "line" : "athariqdm" },
 
       {"nama" : "Bunga Mastiti Darmawan", 
       "panggilan" : "Bunga", 
@@ -151,7 +151,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "bungamastiti", "fb" : "#", "line" : "bungamastiti" }, 
+      "ig" : "bungamastiti", "fb" : false, "line" : "bungamastiti" }, 
 
       {"nama" : "Fadia Afif", 
       "panggilan" : "Fadia", 
@@ -159,7 +159,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "fadiaafifhasan", "fb" : "#", "line" : "muhammad04madrid" }, 
+      "ig" : "fadiaafifhasan", "fb" : false, "line" : "muhammad04madrid" }, 
 
       {"nama" : "Dzakirotur Rifdah", 
       "panggilan" : "Rifdah", 
@@ -167,7 +167,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/rifdah.png", 
-      "ig" : "rifdah.dzk", "fb" : "#", "line" : "athariqdias" }
+      "ig" : "rifdah.dzk", "fb" : false, "line" : "athariqdias" }
     ]
   }
   public getAnggotaMalang(){
@@ -179,7 +179,7 @@ export class AnggotaService {
       "jabatan" : "Leader Tanam Pahala", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mas rizky.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Shulhan Darajat", 
       "panggilan" : "Shulhan", 
@@ -187,7 +187,7 @@ export class AnggotaService {
       "jabatan" : "Leader Celengan Amal", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/massulhan.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Galang Putratama", 
       "panggilan" : "Galang", 
@@ -195,7 +195,7 @@ export class AnggotaService {
       "jabatan" : "Web Developer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/masgalang.jpg", 
-      "ig" : "sasdfsdf", "fb" : "sdfdsf", "line" : "sdfsdfsdf" },
+      "ig" : "galangptrm", "fb" : false, "line" : false },
 
       {"nama" : "Rifaldi Raya", 
       "panggilan" : "Rifal", 
@@ -203,7 +203,7 @@ export class AnggotaService {
       "jabatan" : "Web Developer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/Rifal.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Moh Imam Rosyidi", 
       "panggilan" : "Rosyidi", 
@@ -211,7 +211,7 @@ export class AnggotaService {
       "jabatan" : "Designer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/rosi.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Khoirul Badriyah", 
       "panggilan" : "Khobar", 
@@ -219,7 +219,7 @@ export class AnggotaService {
       "jabatan" : "Social Media Admin", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mbak Khobar.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Nandika Sekar Guamaharani", 
       "panggilan" : "Nandika", 
@@ -227,7 +227,7 @@ export class AnggotaService {
       "jabatan" : "Treasurer", 
       "domisili" : "Malang" , 
       "foto" : "../../assets/profil/malang/mbakNandika.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }
+      "ig" : false, "fb" : false, "line" : false }
     ]
   }
 
@@ -240,7 +240,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26267.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Siti Rohmaniah", 
       "panggilan" : "Rohmaniah", 
@@ -248,7 +248,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26268.jpg",
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Febryan Taufiq", 
       "panggilan" : "Febry",
@@ -256,7 +256,7 @@ export class AnggotaService {
        "jabatan" : "Member", 
        "domisili" : "Semarang" , 
        "foto" : "../../assets/profil/semarang/26266.jpg", 
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Mochammad Iffan Zulfiandri",
        "panggilan" : "Iffan", 
@@ -264,7 +264,7 @@ export class AnggotaService {
        "jabatan" : "Member",
        "domisili" : "Semarang" , 
        "foto" : "../../assets/profil/semarang/1.jpg", 
-       "ig" : "#", "fb" : "#", "line" : "#" }, 
+       "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Dewi Anggraini", 
       "panggilan" : "Dewi", 
@@ -272,7 +272,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/kartun.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Muhammad Kautsar Aqsa", 
       "panggilan" : "Aqsa", 
@@ -280,7 +280,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26264.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" }, 
+      "ig" : false, "fb" : false, "line" : false }, 
 
       {"nama" : "Alifia Hanifah Mumtaz", 
       "panggilan" : "Alifia", 
@@ -288,7 +288,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Semarang" , 
       "foto" : "../../assets/profil/semarang/26265.jpg", 
-      "ig" : "#", "fb" : "#", "line" : "#" } 
+      "ig" : false, "fb" : false, "line" : false } 
      
     ]
   }
@@ -302,7 +302,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/farah.png", 
-      "ig" : "farahnoviandini", "fb" : "#", "line" : "farahnoviandini" }, 
+      "ig" : "farahnoviandini", "fb" : false, "line" : "farahnoviandini" }, 
 
       {"nama" : "Alifah Salsabila", 
       "panggilan" : "Alifah", 
@@ -310,7 +310,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "alfhsalsa", "fb" : "#", "line" : "alfhsalsa" }, 
+      "ig" : "alfhsalsa", "fb" : false, "line" : "alfhsalsa" }, 
 
       {"nama" : "Athariq Dias Muyasar", 
       "panggilan" : "Dias", 
@@ -318,7 +318,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/dias.png", 
-      "ig" : "athariqdiasm", "fb" : "#", "line" : "athariqdm" },
+      "ig" : "athariqdiasm", "fb" : false, "line" : "athariqdm" },
 
       {"nama" : "Bunga Mastiti Darmawan", 
       "panggilan" : "Bunga", 
@@ -326,7 +326,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "bungamastiti", "fb" : "#", "line" : "bungamastiti" }, 
+      "ig" : "bungamastiti", "fb" : false, "line" : "bungamastiti" }, 
 
       {"nama" : "Fadia Afif", 
       "panggilan" : "Fadia", 
@@ -334,7 +334,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/default.jpg", 
-      "ig" : "fadiaafifhasan", "fb" : "#", "line" : "muhammad04madrid" }, 
+      "ig" : "fadiaafifhasan", "fb" : false, "line" : "muhammad04madrid" }, 
 
       {"nama" : "Dzakirotur Rifdah", 
       "panggilan" : "Rifdah", 
@@ -342,7 +342,7 @@ export class AnggotaService {
       "jabatan" : "Member", 
       "domisili" : "Surabaya" , 
       "foto" : "../../assets/profil/surabaya/rifdah.png", 
-      "ig" : "rifdah.dzk", "fb" : "#", "line" : "athariqdias" }
+      "ig" : "rifdah.dzk", "fb" : false, "line" : "athariqdias" }
       
     ]
   }

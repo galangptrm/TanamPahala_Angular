@@ -25,7 +25,6 @@ export class BodyComponent implements OnInit {
   constructor( private _berandaService : BerandaService,
               private _programService : ProgramService,
               private _router : Router ) {
-    
   }
   
   ngOnInit() {
@@ -40,13 +39,10 @@ export class BodyComponent implements OnInit {
     });
 
     $(document).ready(function(){
-      $('.parallax').parallax();
+      $(".parallax").parallax();
+      $(".dropdown-trigger").dropdown();
     });
   }
-
-  // onClick(value){
-  //   this.quotes = value
-  // }
 
   onClick_gallery(value){
 

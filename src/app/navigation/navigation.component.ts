@@ -14,6 +14,9 @@ export class NavigationComponent implements OnInit {
   constructor(public nav : NavbarService) {  }
   
   ngOnInit() {
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown();
+    });
   }
 
   ngAfterViewInit(): void {

@@ -317,9 +317,8 @@ body {
 }
 
 #statistik-panel .card-image img {
-  width: 10%;
+  width: 120%;
   height: auto;
-  margin: 10%;
 }
 
 #foot {
