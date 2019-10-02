@@ -34,6 +34,14 @@
   color: #FFFFFF;
 }
 
+.tblack {
+  color: #000000;
+}
+
+.tblack i {
+  color: #000000;
+}
+
 body {
   font-family: "Ubuntu";
   padding-top: 0px;

@@ -1,7 +1,7 @@
 <head>
     <title> {{post_data.data.title}} </title>
 
-    <meta property="og:url"           content="/program/{{post_data.data.slug}}" />
+    <meta property="og:url"           content="https://tanampahala.com/program/{{post_data.data.slug}}" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="{{post_data.data.title}}" />
     <meta property="og:description"   content="{{post_data.data.title}}" />
@@ -48,15 +48,15 @@
 
   <div class="row">
     <div class="center col s12 m12 l12 xl12">
-      <p class="center p3 b0">Share : 
+      <p class="center p3 b0">Bagikan : 
         
-        <a data-href="http://tanampahala.com" 
+        <a data-href="http://tanampahala.com/program/{{post_data.data.slug}}" 
            target="_blank"
            href="https://www.facebook.com/sharer/sharer.php?u=https://tanampahala.com/program/{{post_data.data.slug}}"
            data-layout="button" class="tgreen1 fb-share-button" 
            style="margin-left:5%"><i class="fab small fa-facebook"></i>
         </a>
-        <a class="tgreen1" style="margin-left:5%" href="instagram.com"><i class="fab small fa-instagram"></i></a> 
+        <!-- <a class="tgreen1" style="margin-left:5%" href="instagram.com"><i class="fab small fa-instagram"></i></a>  -->
       </p>
     </div>
   </div>

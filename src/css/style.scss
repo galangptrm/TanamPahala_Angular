@@ -54,6 +54,7 @@ $colors : (
 .tgreen1 { color: color('Green1'); i{ color: color('Green1') } }
 .tgreenlight { color: color('GreenLight')}
 .twhite { color: #FFFFFF }
+.tblack { color: #000000; i{ color: color(#000000)} }
 
 // font-sizez
 $h1 : 26pt;

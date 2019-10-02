@@ -1,7 +1,7 @@
 <head>
-    <title> Mitra Test </title>
+    <title> Mitra {{mitra_data.nama_mitra}} </title>
 
-    <meta property="og:url"           content="/mitra/{{mitra_data.slug_mitra}}" />
+    <meta property="og:url"           content="https://tanampahala.com/mitra/{{mitra_data.slug_mitra}}" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="{{mitra_data.nama_mitra}}" />
     <meta property="og:description"   content="{{mitra_data.deskripsi}}" />
@@ -33,10 +33,16 @@
                             <p class="tmuted">{{mitra_data.akronim_mitra}}</p>
                         </div>
                         <br>
-                        <a href="{{mitra_data.alamat_url}}" class="greenlight twhite btn-small">
-                          <i class="material-icons left">location_on</i>
-                            {{mitra_data.alamat}}
-                        </a>
+                        <div *ngIf="mitra_data.alamat">
+                          <p class="tmuted">{{mitra_data.alamat}}</p>
+                        </div>
+                        <br>
+                        <div *ngIf="mitra_data.alamat_url">
+                          <a href="{{mitra_data.alamat_url}}" class="greenlight twhite btn-small">
+                            <i class="material-icons left">location_on</i>
+                            Peta Lokasi
+                          </a>
+                        </div>
                         <br>
                     </div>
                     
