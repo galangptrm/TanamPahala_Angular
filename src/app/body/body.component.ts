@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BerandaService } from '../_service/beranda.service';
 import { ProgramService } from '../_service/program.service';
 import { Router } from '@angular/router';
+import { MitraService } from '../_service/mitra.service';
 
 declare var $ : any
 
@@ -20,22 +21,29 @@ export class BodyComponent implements OnInit {
   public galleries = []
   public statistiks = []
   public mitras = []
-  public posts = []
+  public kegiatans = []
   
   constructor( private _berandaService : BerandaService,
               private _programService : ProgramService,
+              private _mitraService : MitraService,
               private _router : Router ) {
   }
   
   ngOnInit() {
     this.galleries = this._berandaService.getGallery()
     this.statistiks = this._berandaService.getStatistik()
-    this.mitras = this._berandaService.getMitra()
+    // this.mitras = this._berandaService.getMitra()
 
-    let get_post = this._programService.getProgramImg(4);
-    get_post.subscribe((resp : any)=>{
+    let get_kegiatans = this._programService.getKegiatanList(4);
+    get_kegiatans.subscribe((resp : any)=>{
       console.log(resp);
-      this.posts = resp;
+      this.kegiatans = resp.data;
+    });
+
+    let get_mitras = this._mitraService.getMitra(100);
+    get_mitras.subscribe((resp : any)=>{
+      console.log(resp);
+      this.mitras = resp.data;
     });
 
     $(document).ready(function(){

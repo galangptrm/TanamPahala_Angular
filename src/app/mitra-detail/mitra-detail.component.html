@@ -1,11 +1,11 @@
 <head>
-    <title> Mitra {{mitra_data.nama_mitra}} </title>
+    <title> Mitra {{mitra_data.data.nama_mitra}} </title>
 
-    <meta property="og:url"           content="https://tanampahala.com/mitra/{{mitra_data.slug_mitra}}" />
+    <meta property="og:url"           content="https://tanampahala.com/mitra/{{mitra_data.data.slug}}" />
     <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="{{mitra_data.nama_mitra}}" />
-    <meta property="og:description"   content="{{mitra_data.deskripsi}}" />
-    <meta property="og:image"         content="{{mitra_data.img_logo}}" />  
+    <meta property="og:title"         content="{{mitra_data.data.nama}}" />
+    <meta property="og:description"   content="{{mitra_data.data.desc}}" />
+    <meta property="og:image"         content="{{mitra_data.data.img_logo_url}}" />  
 </head>
 <body>
   <div id="fb-root"></div>
@@ -13,7 +13,7 @@
   
   <div class="parallax-container">
     <div class="parallax">
-      <img src="{{mitra_data.imgs[0]}}">
+      <img src="{{mitra_data.data.img_1_url}}">
     </div>
   </div>
   <div class="section white">
@@ -24,21 +24,22 @@
                   <div class="col s12 m12 l12 xl12">
                     <div class="col s3 m3 l3 xl3">
                       <div class="avatar-mitra bwhite">
-                          <img class="img-avatar-mitra" src="{{mitra_data.img_logo}}" alt="">
+                          <img class="img-avatar-mitra" src="{{mitra_data.data.img_logo_url}}" alt="">
                       </div>
                     </div>
                     <div class="col s9 m9 l9 xl9">
-                        <div class="h1 b2 tgreen1"> {{mitra_data.nama_mitra}} </div>
-                        <div *ngIf="mitra_data.akronim">
-                            <p class="tmuted">{{mitra_data.akronim_mitra}}</p>
+                        <div class="h1 b2 tgreen1"> {{mitra_data.data.nama}} </div>
+                        <br>
+                        <div *ngIf="mitra_data.data.akronim">
+                            <p class="tmuted">{{mitra_data.data.akronim}}</p>
                         </div>
                         <br>
-                        <div *ngIf="mitra_data.alamat">
-                          <p class="tmuted">{{mitra_data.alamat}}</p>
+                        <div *ngIf="mitra_data.data.alamat">
+                          <p class="tmuted">{{mitra_data.data.alamat}}</p>
                         </div>
                         <br>
-                        <div *ngIf="mitra_data.alamat_url">
-                          <a href="{{mitra_data.alamat_url}}" class="greenlight twhite btn-small">
+                        <div *ngIf="mitra_data.data.alamat_url">
+                          <a href="{{mitra_data.data.alamat_url}}" class="greenlight twhite btn-small">
                             <i class="material-icons left">location_on</i>
                             Peta Lokasi
                           </a>
@@ -57,27 +58,27 @@
           <div class="col s12 m12 l12 xl12 center">
             <p>Kunjungi Sosial Media Mitra kami : </p>
 
-            <div *ngIf="mitra_data.wa">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone={{mitra_data.wa}}" 
+            <div *ngIf="mitra_data.data.wa">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone={{mitra_data.data.wa}}" 
                   class="greenlight twhite btn-small btn-margin">
                   <i class="fab fa-whatsapp left"></i>
-                    {{mitra_data.nama_mitra}}
+                    {{mitra_data.data.nama}}
                 </a>
             </div>
             
-            <div *ngIf="mitra_data.ig">
+            <div *ngIf="mitra_data.data.ig">
                 <a target="_blank" class="greenlight twhite btn-small btn-margin" style="margin-left:2%" 
-                    href="http://instagram.com/{{mitra_data.ig}}" target="_blank">
+                    href="{{mitra_data.data.ig}}" target="_blank">
                   <i class="fab small fa-instagram left"></i>
-                  {{mitra_data.ig}}
+                  {{mitra_data.data.ig}}
                 </a>
             </div>
             
-            <div *ngIf="mitra_data.web">
+            <div *ngIf="mitra_data.data.web">
                 <a target="_blank" class="greenlight twhite btn-small btn-margin" style="margin-left:2%" 
-                    href="{{mitra_data.web}}" target="_blank">
+                    href="{{mitra_data.data.web}}" target="_blank">
                   <i class="fas small fa-globe left"></i>
-                  {{mitra_data.web}}
+                  {{mitra_data.data.web}}
                 </a>
             </div>
             
@@ -89,21 +90,58 @@
       <div class="container">
         <div class="col">
             <p class="artikel-content">
-            {{mitra_data.deskripsi}}
+            {{mitra_data.data.desc}}
             </p>
         </div>
         <div class="col">
-          <!-- Looping Here -->
-          <div *ngFor="let img of mitra_imgs">
-              <div class="col s12 m6 l6 xl4">
-                <div class="card">
-                  <div class="card-image">
-                    <img class="materialboxed" src="{{img}}" alt="">
-                  </div>
-                </div>
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_1_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-1">
               </div>
+            </div>
           </div>
-          <!-- End Looping -->
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_2_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-2">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_3_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-3">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_4_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-4">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_5_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-5">
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 xl4">
+            <div class="card">
+              <div class="card-image">
+                <img class="materialboxed" src="{{mitra_data.data.img_6_url}}" 
+                  onError="this.style.display='none'"  alt="{{mitra_data.data.slug}}-6">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -14,28 +14,18 @@ declare var $ : any;
 export class MitraDetailComponent implements OnInit {
 
   public mitra_data
-  public mitra_imgs = []
   
   constructor(private _mitraService : MitraService,
               private _router : ActivatedRoute) { }
 
   ngOnInit() {
-
-    let mitras = this._mitraService.getMitraAll();
-
-    let slug = this._router.snapshot.paramMap.get('slug');
-
-    for (let i = 0; i < mitras.length; i++) {
-      if (mitras[i].slug_mitra == slug) {
-        this.mitra_data = mitras[i]
-
-        mitras[i].imgs.forEach(img => {
-          this.mitra_imgs.push(img)
-        });
-
-        break
-      } 
-    }
+    let mitra_slug = this._router.snapshot.paramMap.get('slug');
+    
+    let get_mitra = this._mitraService.getMitraDetail(mitra_slug); 
+    get_mitra.subscribe((resp:any)=>{
+      console.log(resp)
+      this.mitra_data = resp
+    })
 
     $(document).ready(function(){
       $('.parallax').parallax();

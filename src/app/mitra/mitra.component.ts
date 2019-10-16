@@ -17,14 +17,18 @@ export class MitraComponent implements OnInit {
                private _router : Router
               ) { }
 
-
   ngOnInit() {
 
-    this.mitras = this._mitraService.getMitraAll()
-    console.log(this.mitras);
+    let get_mitra = this._mitraService.getMitra(100)
+    get_mitra.subscribe((resp : any)=>{
+      console.log(resp);  
+      this.mitras = resp.data;
+    });
+
     $(document).ready(function(){
       $('.parallax').parallax();
     });
+
   }
 
 }

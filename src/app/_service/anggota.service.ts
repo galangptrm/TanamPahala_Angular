@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AnggotaService {
 
-  constructor() { }
+  constructor( private http : HttpClient) { }
+
+  private _url_get_anggota_all_dev_v2 = 'http://localhost:8001/api/anggota/'
+  private _url_get_anggota_all_prod_v2 = 'http://cms.tanampahala.com/api/anggota'
+
+  public getAnggota (){
+    return this.http.get(this._url_get_anggota_all_prod_v2)
+  }
 
   public getAnggotaAll(){
     return [

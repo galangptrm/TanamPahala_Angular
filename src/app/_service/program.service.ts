@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
-import { IProgram } from '../_interface/program';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +16,12 @@ export class ProgramService {
 
   private _url_post_list_dev = 'http://localhost:6060/TanamPahala/TanamPahala_cms/api/v1/post/featured/3';
   private _url_post_detail_dev = 'http://localhost:6060/TanamPahala/TanamPahala_cms/api/v1/post/featured/';
+  
+  private _url_kegiatan_list_dev_v2 = 'http://localhost:8001/api/kegiatan/';
+  private _url_kegiatan_detail_dev_v2 = 'http://localhost:8001/api/kegiatan/detail/';
+
+  private _url_kegiatan_list_prod_v2 = 'http://cms.tanampahala.com/api/kegiatan/';
+  private _url_kegiatan_detail_prod_v2 = 'http://cms.tanampahala.com/api/kegiatan/detail/';
 
   public getDokumentasi(){
     return [
@@ -28,7 +33,13 @@ export class ProgramService {
   }
 
   public getPost(slug){
-    return this.http.get(this._url_post_detail+slug);
+    // return this.http.get(this._url_kegiatan_detail_dev_v2+slug);
+    return this.http.get(this._url_kegiatan_detail_prod_v2+slug);
+  }
+
+  public getKegiatanList(limit){
+    // return this.http.get(this._url_kegiatan_list_dev_v2+limit);
+    return this.http.get(this._url_kegiatan_list_prod_v2+limit);
   }
 
   public getProgramImg(limit){

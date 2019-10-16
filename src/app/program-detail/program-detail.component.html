@@ -1,11 +1,11 @@
 <head>
     <title> {{post_data.data.title}} </title>
 
-    <meta property="og:url"           content="https://tanampahala.com/program/{{post_data.data.slug}}" />
+    <meta property="og:url"           content="https://tanampahala.com/kegiatan/{{post_data.data.slug}}" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="{{post_data.data.title}}" />
-    <meta property="og:description"   content="{{post_data.data.title}}" />
-    <meta property="og:image"         content="{{post_data.img}}" />  
+    <meta property="og:description"   content="{{post_data.data.desc}}" />
+    <meta property="og:image"         content="{{post_data.data.img_url}}" />  
 </head>
 <body>
   <div id="fb-root"></div>
@@ -13,7 +13,7 @@
   
   <div class="parallax-container">
     <div class="parallax">
-      <img src="{{post_data.img}}" onError="this.src='../../assets/website/dummy-169.jpg'">
+      <img src="{{post_data.data.img_url}}" onError="this.src='../../assets/website/dummy-169.jpg'">
     </div>
   </div>
   <div class="section white">
@@ -23,18 +23,18 @@
             <h1 class="h1 b2 tgreen1"> {{post_data.data.title}} </h1>
           </div>
           <div class="col s6 m6 l4 xl4">
-            <p class="tmuted">{{post_data.date}}</p>
+            <p class="tmuted">{{post_data.data.tanggal}} <br> 
+              {{post_data.data.jam}} WIB</p>
           </div>
           <div class="col s6 m6 l8 xl8">
-            <p class="right tmuted">{{post_data.data.first_name}} {{post_data.data.last_name}}</p>
+            <p class="right tmuted">{{post_data.data.anggota}}</p>
           </div>
       </div>
     </div>
     <div class="row">
       <div class="container">
         <div class="col">
-          <p class="artikel-content">
-            {{post_data.data.content}}
+          <p class="artikel-content" [innerHTML]="post_data.data.content">
           </p>
         </div>
       </div>
@@ -50,9 +50,9 @@
     <div class="center col s12 m12 l12 xl12">
       <p class="center p3 b0">Bagikan : 
         
-        <a data-href="http://tanampahala.com/program/{{post_data.data.slug}}" 
+        <a data-href="http://tanampahala.com/kegiatan/{{post_data.data.slug}}" 
            target="_blank"
-           href="https://www.facebook.com/sharer/sharer.php?u=https://tanampahala.com/program/{{post_data.data.slug}}"
+           href="https://www.facebook.com/sharer/sharer.php?u=https://tanampahala.com/kegiatan/{{post_data.data.slug}}"
            data-layout="button" class="tgreen1 fb-share-button" 
            style="margin-left:5%"><i class="fab small fa-facebook"></i>
         </a>

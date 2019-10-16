@@ -1,11 +1,30 @@
 import { Injectable } from '@angular/core';
 
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
 export class MitraService {
 
-  constructor() { }
+  constructor( private http: HttpClient ) { }
+
+  private _url_get_mitra_all_dev_v2 = 'http://localhost:8001/api/mitra/'
+  private _url_get_mitra_detail_dev_v2 = 'http://localhost:8001/api/mitra/detail/'
+
+  private _url_get_mitra_all_prod_v2 = 'http://cms.tanampahala.com/api/mitra/'
+  private _url_get_mitra_detail_prod_v2 = 'http://cms.tanampahala.com/api/mitra/detail/'
+
+  public getMitra(limit){
+    // return this.http.get(this._url_get_mitra_all_dev_v2+limit)
+    return this.http.get(this._url_get_mitra_all_prod_v2+limit)
+  }
+
+  public getMitraDetail(slug){
+    // return this.http.get(this._url_get_mitra_detail_dev_v2+slug)
+    return this.http.get(this._url_get_mitra_detail_prod_v2+slug)
+  }
 
   public getMitraAll(){
     return [

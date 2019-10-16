@@ -20,8 +20,8 @@ export class ProgramDetailComponent implements OnInit {
 
   ngOnInit() {
     let post_slug = this._router.snapshot.paramMap.get('slug');
-    let get_post = this._programService.getPost(post_slug);
-    get_post.subscribe((resp : any)=>{
+    let get_kegiatan = this._programService.getPost(post_slug);
+    get_kegiatan.subscribe((resp : any)=>{
       console.log(resp);
       this.post_data = resp;
     });

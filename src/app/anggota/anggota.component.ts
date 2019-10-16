@@ -11,6 +11,7 @@ declare var $ : any;
 
 export class AnggotaComponent implements OnInit {
 
+  public anggotas = []
   public anggotaAlls = []
   public anggotaMalangs = []
   public anggotaSemarangs = []
@@ -19,11 +20,30 @@ export class AnggotaComponent implements OnInit {
   constructor(private _anggotaService : AnggotaService) { }
 
   ngOnInit() {
-    this.anggotaAlls = this._anggotaService.getAnggotaAll()
-    this.anggotaMalangs = this._anggotaService.getAnggotaMalang()
-    this.anggotaSemarangs = this._anggotaService.getAnggotaSemarang()
-    this.anggotaSurabayas = this._anggotaService.getAnggotaSurabaya()
 
+    let get_anggota = this._anggotaService.getAnggota()
+    get_anggota.subscribe((resp:any)=>{
+      console.log(resp)
+
+      this.anggotas = resp.data
+      if (this.anggotas!=null) {
+          this.anggotas.forEach(e => {
+            console.log(e)
+            if (e.domisili_id == 1) {
+              this.anggotaMalangs.push(e)
+            }
+            else if (e.domisili_id == 2) {
+              this.anggotaSemarangs.push(e)
+            } else {
+              this.anggotaSurabayas.push(e)
+            }
+          });
+      }
+      console.log(this.anggotaMalangs)
+      console.log(this.anggotaSemarangs)
+      console.log(this.anggotaSurabayas)
+    })
+    
     $(document).ready(function(){
       $('.parallax').parallax();
     });

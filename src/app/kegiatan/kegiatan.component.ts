@@ -13,7 +13,7 @@ export class KegiatanComponent implements OnInit {
 
   quotes : string
 
-  public posts = []
+  public kegiatans = []
   
   constructor( 
               private _programService : ProgramService,
@@ -23,11 +23,11 @@ export class KegiatanComponent implements OnInit {
   
   ngOnInit() {
 
-    let get_post = this._programService.getProgramImg(10);
-    get_post.subscribe((resp : any)=>{
+    let get_kegiatan = this._programService.getKegiatanList(12);
+    get_kegiatan.subscribe((resp : any)=>{
       console.log(resp);
       
-      this.posts = resp;
+      this.kegiatans = resp.data;
     });
 
     $(document).ready(function(){
