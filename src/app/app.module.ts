@@ -17,6 +17,7 @@ import { ProgramDetailComponent } from './program-detail/program-detail.componen
 import { KegiatanComponent } from './kegiatan/kegiatan.component';
 import { MitraComponent } from './mitra/mitra.component';
 import { MitraDetailComponent } from './mitra-detail/mitra-detail.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MitraDetailComponent } from './mitra-detail/mitra-detail.component';
     FormsModule,
     AppRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [
     AnggotaService, 
