@@ -8,5 +8,13 @@ if (environment.production) {
   enableProdMode();
 }
 
+// platformBrowserDynamic().bootstrapModule(AppModule)
+//   .catch(err => console.error(err));
+
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+.then(() => {
+  if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('tanampahala-worker.min.js');
+  }
+})
+.catch(err=> console.log(err));
