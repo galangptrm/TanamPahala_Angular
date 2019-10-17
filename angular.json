@@ -29,7 +29,8 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.js",
               "node_modules/materialize-css/dist/js/materialize.js"
-            ]
+            ],
+            "serviceWorker": true
           },
           "configurations": {
             "production": {
