@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -6,9 +7,16 @@ import { Injectable } from '@angular/core';
 
 export class BerandaService {
 
-  constructor() { }
+  constructor( private http : HttpClient ) { }
+
+  private _url_get_statistik_dev_v2 = 'http://localhost:8001/api/stat/';
+  private _url_get_statistik_prod_v2 = 'http://cms.tanampahala.com/api/stat';
 
   public getStatistiks() {
+    return this.http.get(this._url_get_statistik_dev_v2).pipe();  
+  }
+
+  public getStatistiks2() {
     return [
       {"img":"../../assets/website/v2/ggift.png", "judul" : "Jumlah Donatur", "jumlah" : "37", "keterangan" : "Orang"},
       {"img":"../../assets/website/v2/gtrash.png", "judul" : "Sampah Tersisa", "jumlah" : "5", "keterangan" : "Kilogram"},

@@ -1,20 +1,29 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BerandaService {
 
-  constructor() { }
+constructor(private http : HttpClient) { }
+
+private _url_get_statistik_dev_v2 = 'http://localhost:8001/api/stat';
+private _url_get_statistik_prod_v2 = 'http://cms.tanampahala.com/api/stat';
 
 public getStatistik() {
-  return [
-    {"img":"../../assets/website/v2/ggift.png", "judul" : "Jumlah Donatur", "jumlah" : "573", "keterangan" : "Orang"},
-    {"img":"../../assets/website/v2/gtrash.png", "judul" : "Sampah Terkumpul", "jumlah" : "528", "keterangan" : "Kg"},
-    {"img":"../../assets/website/v2/gcoin.png", "judul" : "Koin Terkumpul", "jumlah" : "Rp.356,500", "keterangan" : ""},
-    {"img":"../../assets/website/v2/ghandshake.png", "judul" : "Penerima Manfaat", "jumlah" : "1024", "keterangan" : "Orang"}
-  ]
+  return this.http.get(this._url_get_statistik_dev_v2);
 }
+
+// public getStatistik2() {
+//   let stat = this.getStatistik();
+//   return [
+//     {"img":"../../assets/website/v2/ggift.png", "judul" : "Jumlah Donatur", "jumlah" : "573", "keterangan" : "Orang"},
+//     {"img":"../../assets/website/v2/gtrash.png", "judul" : "Sampah Terkumpul", "jumlah" : "528", "keterangan" : "Kg"},
+//     {"img":"../../assets/website/v2/gcoin.png", "judul" : "Koin Terkumpul", "jumlah" : "Rp.356,500", "keterangan" : ""},
+//     {"img":"../../assets/website/v2/ghandshake.png", "judul" : "Penerima Manfaat", "jumlah" : "1024", "keterangan" : "Orang"}
+//   ]
+// }
 
 public getGallery(){
   return [

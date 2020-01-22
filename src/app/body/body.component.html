@@ -241,12 +241,39 @@
 					<small class="p3 b0"> <i>Update</i> : September 2019</small></p>
 			</div>
 
-			<div *ngFor="let statistik of statistiks" id="statistik-panel">
+			<div id="statistik-panel">
 				<div class="col s12 m6 l3">
 					<div class="card center">
-						<img src="{{statistik.img}}">
-						<p class="center p3 b0 tgreen1">{{statistik.judul}}</p>
-						<span class="center p2 b4 tgreen1">{{statistik.jumlah}}</span>&nbsp;<span class="p2 b4 tgreenlight">{{statistik.keterangan}}</span>
+						<img src="../../assets/website/v2/ggift.png">
+						<p class="center p3 b0 tgreen1">Jumlah Donatur</p>
+						<span class="center p2 b4 tgreen1">{{statistik.donatur.total_donatur}}</span>&nbsp;<span class="p2 b4 tgreenlight"> Orang</span>
+					</div>
+				</div>
+			</div>
+			<div id="statistik-panel">
+				<div class="col s12 m6 l3">
+					<div class="card center">
+						<img src="../../assets/website/v2/gtrash.png">
+						<p class="center p3 b0 tgreen1">Sampah Terkumpul</p>
+						<span class="center p2 b4 tgreen1">{{statistik.donatur.total_berat_sampah}}</span>&nbsp;<span class="p2 b4 tgreenlight"> Kg</span>
+					</div>
+				</div>
+			</div>
+			<div id="statistik-panel">
+				<div class="col s12 m6 l3">
+					<div class="card center">
+						<img src="../../assets/website/v2/gcoin.png">
+						<p class="center p3 b0 tgreen1">Koin Terkumpul</p>
+						<span class="center p2 b4 tgreen1">Rp.{{statistik.donatur.total_koin}}</span>&nbsp;<span class="p2 b4 tgreenlight"></span>
+					</div>
+				</div>
+			</div>
+			<div id="statistik-panel">
+				<div class="col s12 m6 l3">
+					<div class="card center">
+						<img src="../../assets/website/v2/ghandshake.png">
+						<p class="center p3 b0 tgreen1">Penerima Manfaat</p>
+						<span class="center p2 b4 tgreen1">{{statistik.donasi.total_manfaat}}</span>&nbsp;<span class="p2 b4 tgreenlight"> Pihak</span>
 					</div>
 				</div>
 			</div>

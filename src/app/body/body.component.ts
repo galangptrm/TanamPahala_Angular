@@ -19,7 +19,7 @@ export class BodyComponent implements OnInit {
   public displayable = true
 
   public galleries = []
-  public statistiks = []
+  public statistik
   public mitras = []
   public kegiatans = []
   
@@ -30,10 +30,8 @@ export class BodyComponent implements OnInit {
   }
   
   ngOnInit() {
-    this.galleries = this._berandaService.getGallery()
-    this.statistiks = this._berandaService.getStatistik()
-    // this.mitras = this._berandaService.getMitra()
-
+    this.galleries = this._berandaService.getGallery();
+    
     let get_kegiatans = this._programService.getKegiatanList(4);
     get_kegiatans.subscribe((resp : any)=>{
       console.log(resp);
@@ -44,6 +42,11 @@ export class BodyComponent implements OnInit {
     get_mitras.subscribe((resp : any)=>{
       console.log(resp);
       this.mitras = resp.data;
+    });
+
+    let get_statistik = this._berandaService.getStatistik();
+    get_statistik.subscribe(response => {    
+      console.log(response);
     });
 
     $(document).ready(function(){
