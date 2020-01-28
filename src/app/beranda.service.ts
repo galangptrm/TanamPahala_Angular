@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { Observable } from 'rxjs';
+
 @Injectable({
   providedIn: 'root'
 })
 
-export class BerandaService {
+export class _BerandaService {
 
   constructor( private http : HttpClient ) { }
 
@@ -13,7 +15,7 @@ export class BerandaService {
   private _url_get_statistik_prod_v2 = 'http://cms.tanampahala.com/api/stat';
 
   public getStatistiks() {
-    return this.http.get(this._url_get_statistik_dev_v2).pipe();  
+    return this.http.get(this._url_get_statistik_prod_v2);  
   }
 
   public getStatistiks2() {
@@ -49,6 +51,10 @@ export class BerandaService {
       {"img" : "../../assets/mitra/maklum.png", "url" : ""},
       {"img" : "../../assets/mitra/anekajajanan.png", "url" : ""}
     ]
+  }
+
+  private handleError(error: Response) {
+    return Observable.throw(error.statusText);
   }
 
 }

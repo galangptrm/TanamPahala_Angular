@@ -19,7 +19,7 @@ export class BodyComponent implements OnInit {
   public displayable = true
 
   public galleries = []
-  public statistik
+  public statistik = null
   public mitras = []
   public kegiatans = []
   
@@ -45,8 +45,9 @@ export class BodyComponent implements OnInit {
     });
 
     let get_statistik = this._berandaService.getStatistik();
-    get_statistik.subscribe(response => {    
-      console.log(response);
+    get_statistik.subscribe((resp : any) => {
+      console.log(resp);
+      this.statistik = resp.data;
     });
 
     $(document).ready(function(){

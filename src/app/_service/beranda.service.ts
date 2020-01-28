@@ -4,15 +4,17 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class BerandaService {
 
 constructor(private http : HttpClient) { }
 
-private _url_get_statistik_dev_v2 = 'http://localhost:8001/api/stat';
-private _url_get_statistik_prod_v2 = 'http://cms.tanampahala.com/api/stat';
+private _url_get_statistik_dev_v23  = 'https://jsonplaceholder.typicode.com/posts/1';
+private _url_get_statistik_dev_v2   = 'http://127.0.0.1:8001/api/statistik/';
+private _url_get_statistik_prod_v2  = 'http://cms.tanampahala.com/api/statistik';
 
 public getStatistik() {
-  return this.http.get(this._url_get_statistik_dev_v2);
+  return this.http.get(this._url_get_statistik_prod_v2);
 }
 
 // public getStatistik2() {
